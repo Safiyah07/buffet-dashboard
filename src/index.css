@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cairo:wght@600&family=Inter:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	margin: 0;
+	font-family: 'Inter', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sidebarNav {
+	display: flex;
+	align-items: center;
+	margin-bottom: 4px;
+	padding: 8px 16px;
+	width: 100%;
+	border-radius: 4px;
+}
+
+.sidebarNav:hover {
+	color: #fff;
+	background-color: #a899dc;
+}
+
+.active-sidebar {
+	display: flex;
+	align-items: center;
+	margin-bottom: 4px;
+	padding: 8px 16px;
+	width: 100%;
+	border-radius: 4px;
+	color: #fff;
+	background-color: #a899dc;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	/* box-shadow: inset 1px 1px 2px grey; */
+	border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #99a0aa;
+	border-radius: 10px;
+}
+
+.table :where(th, td) {
+	white-space: nowrap;
+	/* padding: 2vw 2vw16px; */
+	vertical-align: middle;
+	width: 100vw;
+}
