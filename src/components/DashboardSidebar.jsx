@@ -18,41 +18,49 @@ function DashboardSidebar() {
 			id: 1,
 			title: 'dashboard',
 			icon: <TbLayout2 />,
+			link: ''
 		},
 		{
 			id: 2,
 			title: 'menu',
 			icon: <VscLayoutMenubar />,
+			link: 'menu'
 		},
 		{
 			id: 3,
 			title: 'orders',
 			icon: <TbPhoneCheck />,
+			link: 'orders'
 		},
 		{
 			id: 4,
 			title: 'staff',
 			icon: <IoIosPeople />,
+			link: 'staff'
 		},
 		{
 			id: 5,
 			title: 'delivery',
 			icon: <TbTruckDelivery />,
+			link: 'delivery'
 		},
 		{
 			id: 6,
 			title: 'analytics',
 			icon: <BsBarChartLine />,
+			link: 'analytics'
 		},
 		{
 			id: 7,
 			title: 'messenger',
 			icon: <TbMessageCircle2 />,
+			link: 'messenger'
 		},
 		{
 			id: 6,
 			title: 'calender',
 			icon: <BsCalendar2Date />,
+			link: 'calender'
 		},
 	]
 
@@ -110,9 +118,9 @@ function DashboardSidebar() {
 									className='capitalize'
 								>
 									<Link
-										to={`/${Item.title}`}
+										to={`/${Item.link}`}
 										className={`${
-											pathMatchRoute(`/${Item.title}`) &&
+											pathMatchRoute(`/${Item.link}`) &&
 											'text-white bg-light-purple'
 										} flex items-center mb-1 py-2 px-4 w-full rounded-lg hover:bg-light-purple hover:text-white`}
 									>
