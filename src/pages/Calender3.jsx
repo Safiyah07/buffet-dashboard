@@ -28,8 +28,8 @@ function Calender3() {
 	// })
 
 	const nowDay = new Date(year, 2)
-  const firstDateOfMonth = format(nowDay, 'yyyy-MM-01')
-  const lastDateOfMonth = format(lastDayOfMonth(nowDay), 'yyyy-MM-dd')
+	const firstDateOfMonth = format(nowDay, 'yyyy-MM-01')
+	const lastDateOfMonth = format(lastDayOfMonth(nowDay), 'yyyy-MM-dd')
 	const daysInterval = eachDayOfInterval({
 		start: firstDayCurrentMonth,
 		end: endOfMonth(firstDayCurrentMonth),
@@ -65,7 +65,7 @@ function Calender3() {
 				{monthsOfYear.map((months) => (
 					<div
 						key={months}
-						className='text-center font-bold mx-4 mt-5'
+						className='mx-4 mt-5 font-bold text-center'
 					>
 						{months}
 

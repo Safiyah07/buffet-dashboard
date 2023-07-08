@@ -1,4 +1,5 @@
 import { useState, useEffect, createContext } from 'react'
+import PropTypes from 'prop-types'
 
 const ThemeContext = createContext()
 
@@ -36,6 +37,10 @@ export const ThemeProvider = ({ children }) => {
 			{children}
 		</ThemeContext.Provider>
 	)
+}
+
+ThemeContext.propTypes = {
+	children: PropTypes.any,
 }
 
 export default ThemeContext

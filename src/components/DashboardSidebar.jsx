@@ -13,6 +13,62 @@ import { BsBarChartLine, BsCalendar2Date } from 'react-icons/bs'
 import DashboardLogo from '../assets/DashboardLogo.png'
 
 function DashboardSidebar() {
+	const navbarItems = [
+		{
+			id: 1,
+			title: 'dashboard',
+			icon: <TbLayout2 />,
+		},
+		{
+			id: 2,
+			title: 'menu',
+			icon: <VscLayoutMenubar />,
+		},
+		{
+			id: 3,
+			title: 'orders',
+			icon: <TbPhoneCheck />,
+		},
+		{
+			id: 4,
+			title: 'staff',
+			icon: <IoIosPeople />,
+		},
+		{
+			id: 5,
+			title: 'delivery',
+			icon: <TbTruckDelivery />,
+		},
+		{
+			id: 6,
+			title: 'analytics',
+			icon: <BsBarChartLine />,
+		},
+		{
+			id: 7,
+			title: 'messenger',
+			icon: <TbMessageCircle2 />,
+		},
+		{
+			id: 6,
+			title: 'calender',
+			icon: <BsCalendar2Date />,
+		},
+	]
+
+	const navbarItemsBottom = [
+		{
+			id: 1,
+			title: 'settings',
+			icon: <TbSettings />,
+		},
+		{
+			id: 2,
+			title: 'log-out',
+			icon: <IoPersonCircleSharp />,
+		},
+	]
+
 	const location = useLocation()
 
 	const pathMatchRoute = (route) => {
@@ -24,11 +80,11 @@ function DashboardSidebar() {
 	return (
 		<>
 			{/* Sidebar for larger screens */}
-			<div className='fixed xl:w-[17vw] text-black bg-violet-shade rounded-xl shadow-[1px_1px_3px_0px_grey] no-animation overflow-y-auto h-[96vh] z-10'>
-				<div className='sm:hidden md:hidden h-full relative flex flex-col justify-between w-full'>
+			<div className='fixed xl:w-[17vw] text-black bg-violet-shade rounded-xl shadow-[1px_1px_3px_0px_grey] overflow-y-auto h-[96vh] z-10'>
+				<div className='relative flex flex-col justify-between w-full h-full sm:hidden md:hidden'>
 					<Link
 						to='/'
-						className='p-4 flex items-center'
+						className='flex items-center p-4'
 					>
 						<img
 							src={DashboardLogo}
@@ -37,7 +93,7 @@ function DashboardSidebar() {
 							height='40px'
 						/>
 						<h1
-							className='text-xl font-bold uppercase text-center'
+							className='text-xl font-bold text-center uppercase'
 							style={{ fontFamily: 'Abril Fatface' }}
 						>
 							Buffet
@@ -45,133 +101,48 @@ function DashboardSidebar() {
 					</Link>
 
 					<div>
-						<ul className='menu p-4 rounded-box'>
-							<span className='text-sm text-slate-400 pb-1'>Main Menu</span>
-							<li>
-								<Link
-									to='/'
-									className={
-										pathMatchRoute('/') ? 'active-sidebar' : 'sidebarNav'
-									}
+						<ul className='p-4 rounded-box'>
+							<span className='pb-1 text-sm text-slate-400'>Main Menu</span>
+
+							{navbarItems.map((Item) => (
+								<li
+									key={Item.id}
+									className='capitalize'
 								>
-									<TbLayout2 />
-									Dashboard
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/menu'
-									className={
-										pathMatchRoute('/menu') ? 'active-sidebar' : 'sidebarNav'
-									}
-								>
-									<VscLayoutMenubar />
-									Menu
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/orders'
-									className={
-										pathMatchRoute('/orders') ? 'active-sidebar' : 'sidebarNav'
-									}
-								>
-									<TbPhoneCheck />
-									Orders
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/staff'
-									className={
-										pathMatchRoute('/staff') ? 'active-sidebar' : 'sidebarNav'
-									}
-								>
-									<IoIosPeople />
-									Staff
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/delivery'
-									className={
-										pathMatchRoute('/delivery')
-											? 'active-sidebar'
-											: 'sidebarNav'
-									}
-								>
-									<TbTruckDelivery />
-									Delivery
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/analytics'
-									className={
-										pathMatchRoute('/analytics')
-											? 'active-sidebar'
-											: 'sidebarNav'
-									}
-								>
-									<BsBarChartLine />
-									Analytics
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/messenger'
-									className={
-										pathMatchRoute('/messenger')
-											? 'active-sidebar'
-											: 'sidebarNav'
-									}
-								>
-									<TbMessageCircle2 />
-									Messenger
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/calender'
-									className={
-										pathMatchRoute('/calender')
-											? 'active-sidebar'
-											: 'sidebarNav'
-									}
-								>
-									<BsCalendar2Date />
-									Calender
-								</Link>
-							</li>
+									<Link
+										to={`/${Item.title}`}
+										className={`${
+											pathMatchRoute(`/${Item.title}`) &&
+											'text-white bg-light-purple'
+										} flex items-center mb-1 py-2 px-4 w-full rounded-lg hover:bg-light-purple hover:text-white`}
+									>
+										<span className='mr-2'>{Item.icon}</span>
+										{Item.title}
+									</Link>
+								</li>
+							))}
 						</ul>
 					</div>
 
 					<div>
-						<ul className='menu p-4 rounded-box'>
-							<li>
-								<Link
-									to='/settings'
-									className={
-										pathMatchRoute('/settings')
-											? 'active-sidebar'
-											: 'sidebarNav'
-									}
+						<ul className='p-4 rounded-box'>
+						{navbarItemsBottom.map((Item) => (
+								<li
+									key={Item.id}
+									className='capitalize'
 								>
-									<TbSettings />
-									Settings
-								</Link>
-							</li>
-							<li>
-								<Link
-									to='/log-out'
-									className={
-										pathMatchRoute('/log-out') ? 'active-sidebar' : 'sidebarNav'
-									}
-								>
-									<IoPersonCircleSharp />
-									Log Out
-								</Link>
-							</li>
+									<Link
+										to={`/${Item.title}`}
+										className={`${
+											pathMatchRoute(`/${Item.title}`) &&
+											'text-white bg-light-purple'
+										} flex items-center mb-1 py-2 px-4 w-full rounded-lg hover:bg-light-purple hover:text-white`}
+									>
+										<span className='mr-2'>{Item.icon}</span>
+										{Item.title}
+									</Link>
+								</li>
+							))}
 						</ul>
 					</div>
 				</div>

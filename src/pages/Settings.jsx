@@ -10,8 +10,8 @@ function Settings() {
 	}
 	return (
 		<>
-			<div className='sm:overflow-x-auto w-full'>
-				{/* <div className='lg:my-4 max_md:mb-5 h-16 grid grid-cols-5 lg:gap-9 max_md:gap-y-4 max_md:gap-x-8 w-full max_md:grid-cols-2 max_md:h-44'> */}
+			<div className='w-full sm:overflow-x-auto'>
+				{/* <div className='grid w-full h-16 grid-cols-5 lg:my-4 max_md:mb-5 lg:gap-9 max_md:gap-y-4 max_md:gap-x-8 max_md:grid-cols-2 max_md:h-44'> */}
 				<div className='lg:my-4 md:mb-3 h-16 grid grid-cols-5 lg:gap-9 max_md:gap-x-4 w-full md:grid-cols-3 md:h-[7.5rem] sm:grid-cols-2 sm:h-36 sm:mb-12 sm:gap-y-4'>
 					<button
 						onClick={() => toggleTab(1)}
@@ -53,14 +53,12 @@ function Settings() {
 					>
 						Position
 					</button>
-					<button
-						className='btn btn-outline bg-light-purple text-white border border-light-purple rounded-md h-[2.9rem] hover:bg-light-purple hover:text-white hover:border-light-purple'
-					>
+					<button className='btn btn-outline bg-light-purple text-white border border-light-purple rounded-md h-[2.9rem] hover:bg-light-purple hover:text-white hover:border-light-purple'>
 						Save
 					</button>
 				</div>
 
-        <SettingsTable />
+				<SettingsTable />
 			</div>
 		</>
 	)

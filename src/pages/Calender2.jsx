@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {
-	add,
+	// add,
 	eachDayOfInterval,
 	endOfMonth,
 	format,
@@ -31,17 +31,15 @@ export default function Calender2() {
 		end: endOfMonth(firstDayCurrentMonth),
 	})
 
-	
-	
 	// console.log(currentMonth)
 	// console.log(firstDayCurrentMonth)
 	// console.log(days);
-	
+
 	// YEAR
 	const year = new Date().getFullYear()
-	
+
 	const getMonths = getDaysInMonth(new Date(year, 5))
-	console.log(getMonths);
+	console.log(getMonths)
 
 	// MONTHS
 	const monthsOfYear = [
@@ -82,7 +80,7 @@ export default function Calender2() {
 				<div className='flex mb-4'>
 					<p className='font-bold'>{dateTime}</p>
 				</div>
-				<div className='m-auto bg-light-purple text-white rounded-md w-20 py-3 px-5'>
+				<div className='w-20 px-5 py-3 m-auto text-white rounded-md bg-light-purple'>
 					{year}
 				</div>
 
@@ -91,7 +89,7 @@ export default function Calender2() {
 						{monthsOfYear.map((month) => (
 							<div
 								key={month}
-								className='m-2 text-center font-bold'
+								className='m-2 font-bold text-center'
 							>
 								{month}
 

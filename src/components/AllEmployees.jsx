@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { TbMessageCircle2 } from 'react-icons/tb'
 import Avatar1 from '../assets/Avatar1.png'
 import Avatar2 from '../assets/Avatar2.png'
@@ -33,7 +34,7 @@ function AllEmployees({ tab }) {
 							<tr>
 								<td>
 									<div className='avatar'>
-										<div className='mask mask-squircle w-12 h-12'>
+										<div className='w-12 h-12 mask mask-squircle'>
 											<img
 												src={Avatar1}
 												alt='Avatar 1'
@@ -62,7 +63,7 @@ function AllEmployees({ tab }) {
 							<tr>
 								<td>
 									<div className='avatar'>
-										<div className='mask mask-squircle w-12 h-12'>
+										<div className='w-12 h-12 mask mask-squircle'>
 											<img
 												src={Avatar2}
 												alt='Avatar 2'
@@ -91,7 +92,7 @@ function AllEmployees({ tab }) {
 							<tr>
 								<td>
 									<div className='avatar'>
-										<div className='mask mask-squircle w-12 h-12'>
+										<div className='w-12 h-12 mask mask-squircle'>
 											<img
 												src={Avatar3}
 												alt='Avatar 3'
@@ -121,7 +122,7 @@ function AllEmployees({ tab }) {
 							<tr>
 								<td>
 									<div className='avatar'>
-										<div className='mask mask-squircle w-12 h-12'>
+										<div className='w-12 h-12 mask mask-squircle'>
 											<img
 												src={Avatar4}
 												alt='Avatar 4'
@@ -152,7 +153,7 @@ function AllEmployees({ tab }) {
 							<tr>
 								<td>
 									<div className='avatar'>
-										<div className='mask mask-squircle w-12 h-12'>
+										<div className='w-12 h-12 mask mask-squircle'>
 											<img
 												src={Avatar5}
 												alt='Avatar 5'
@@ -182,7 +183,7 @@ function AllEmployees({ tab }) {
 							<tr>
 								<td>
 									<div className='avatar'>
-										<div className='mask mask-squircle w-12 h-12'>
+										<div className='w-12 h-12 mask mask-squircle'>
 											<img
 												src={Avatar6}
 												alt='Avatar 6'
@@ -211,7 +212,7 @@ function AllEmployees({ tab }) {
 							<tr>
 								<td>
 									<div className='avatar'>
-										<div className='mask mask-squircle w-12 h-12'>
+										<div className='w-12 h-12 mask mask-squircle'>
 											<img
 												src={Avatar7}
 												alt='Avatar 7'
@@ -241,7 +242,7 @@ function AllEmployees({ tab }) {
 							<tr>
 								<td>
 									<div className='avatar'>
-										<div className='mask mask-squircle w-12 h-12'>
+										<div className='w-12 h-12 mask mask-squircle'>
 											<img
 												src={Avatar8}
 												alt='Avatar 8'
@@ -272,6 +273,10 @@ function AllEmployees({ tab }) {
 			</div>
 		</>
 	)
+}
+
+AllEmployees.propTypes = {
+	tab: PropTypes.any,
 }
 
 export default AllEmployees

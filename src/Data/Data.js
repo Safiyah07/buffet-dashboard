@@ -29,13 +29,13 @@ const UserData = [
 		userGain: 33300,
 		userLost: 22234,
 	},
-  {
+	{
 		id: 6,
 		year: 2021,
 		userGain: 52300,
 		userLost: 10234,
 	},
-  {
+	{
 		id: 7,
 		year: 2022,
 		userGain: 40300,

@@ -12,7 +12,7 @@ import Avatar8 from '../assets/Avatar8.png'
 function Orders() {
 	return (
 		<>
-			<div className='overflow-x-auto w-full'>
+			<div className='w-full overflow-x-auto'>
 				{/* <div className='lg:my-4 max_md:mb-5 h-16 max_md:h-28 grid grid-cols-4 lg:gap-24 max_md:gap-y-4 md:gap-x-8 sm:gap-x-8 max_md:grid-cols-2 w-full max_md:w-[96vw]'> */}
 				<div className='lg:my-4 max_md:mb-5 h-16 max_md:h-28 grid grid-cols-4 lg:gap-24 max_md:gap-y-4 md:gap-x-8 sm:gap-x-8 max_md:grid-cols-2 w-full max_md:w-[96vw]'>
 					<button className='btn btn-outline border-info hover:bg-transparent hover:text-inherit'>
@@ -52,7 +52,7 @@ function Orders() {
 								<td>
 									<div className='flex items-center space-x-3'>
 										<div className='avatar'>
-											<div className='mask mask-squircle w-12 h-12'>
+											<div className='w-12 h-12 mask mask-squircle'>
 												<img
 													src={Avatar1}
 													alt='Avatar 1'
@@ -68,7 +68,7 @@ function Orders() {
 								<td>Azatutyam 6</td>
 								<td>Home Delivery</td>
 								<td>
-									<div className='badge badge-accent py-2 px-1 rounded'>
+									<div className='px-1 py-2 rounded badge badge-accent'>
 										Delivered
 									</div>
 								</td>
@@ -85,7 +85,7 @@ function Orders() {
 								<td>
 									<div className='flex items-center space-x-3'>
 										<div className='avatar'>
-											<div className='mask mask-squircle w-12 h-12'>
+											<div className='w-12 h-12 mask mask-squircle'>
 												<img
 													src={Avatar2}
 													alt='Avatar 2'
@@ -101,7 +101,7 @@ function Orders() {
 								<td>Charents 8</td>
 								<td>Pick by Yourself</td>
 								<td>
-									<div className='badge badge-warning py-2 px-3 rounded'>
+									<div className='px-3 py-2 rounded badge badge-warning'>
 										Waiting
 									</div>
 								</td>
@@ -118,7 +118,7 @@ function Orders() {
 								<td>
 									<div className='flex items-center space-x-3'>
 										<div className='avatar'>
-											<div className='mask mask-squircle w-12 h-12'>
+											<div className='w-12 h-12 mask mask-squircle'>
 												<img
 													src={Avatar3}
 													alt='Avatar 3'
@@ -134,7 +134,7 @@ function Orders() {
 								<td>Azatutyam 8</td>
 								<td>Home Delivery</td>
 								<td>
-									<div className='badge badge-accent py-2 px-1 rounded'>
+									<div className='px-1 py-2 rounded badge badge-accent'>
 										Delivered
 									</div>
 								</td>
@@ -151,7 +151,7 @@ function Orders() {
 								<td>
 									<div className='flex items-center space-x-3'>
 										<div className='avatar'>
-											<div className='mask mask-squircle w-12 h-12'>
+											<div className='w-12 h-12 mask mask-squircle'>
 												<img
 													src={Avatar4}
 													alt='Avatar 4'
@@ -167,7 +167,7 @@ function Orders() {
 								<td>Azatutyam 8</td>
 								<td>Home Delivery</td>
 								<td>
-									<div className='badge badge-warning py-2 px-3 rounded'>
+									<div className='px-3 py-2 rounded badge badge-warning'>
 										Waiting
 									</div>
 								</td>
@@ -185,7 +185,7 @@ function Orders() {
 								<td>
 									<div className='flex items-center space-x-3'>
 										<div className='avatar'>
-											<div className='mask mask-squircle w-12 h-12'>
+											<div className='w-12 h-12 mask mask-squircle'>
 												<img
 													src={Avatar5}
 													alt='Avatar 5'
@@ -201,7 +201,7 @@ function Orders() {
 								<td>Charents 8</td>
 								<td>Pick by Yourself</td>
 								<td>
-									<div className='badge badge-warning py-2 px-3 rounded'>
+									<div className='px-3 py-2 rounded badge badge-warning'>
 										Waiting
 									</div>
 								</td>
@@ -219,7 +219,7 @@ function Orders() {
 								<td>
 									<div className='flex items-center space-x-3'>
 										<div className='avatar'>
-											<div className='mask mask-squircle w-12 h-12'>
+											<div className='w-12 h-12 mask mask-squircle'>
 												<img
 													src={Avatar6}
 													alt='Avatar 6'
@@ -235,7 +235,7 @@ function Orders() {
 								<td>Azatutyam 8</td>
 								<td>Home Delivery</td>
 								<td>
-									<div className='badge badge-accent py-2 px-1  rounded'>
+									<div className='px-1 py-2 rounded badge badge-accent'>
 										Delivered
 									</div>
 								</td>
@@ -252,7 +252,7 @@ function Orders() {
 								<td>
 									<div className='flex items-center space-x-3'>
 										<div className='avatar'>
-											<div className='mask mask-squircle w-12 h-12'>
+											<div className='w-12 h-12 mask mask-squircle'>
 												<img
 													src={Avatar7}
 													alt='Avatar 7'
@@ -268,7 +268,7 @@ function Orders() {
 								<td>Azatutyam 8</td>
 								<td>Home Delivery</td>
 								<td>
-									<div className='badge badge-warning py-2 px-3 rounded'>
+									<div className='px-3 py-2 rounded badge badge-warning'>
 										Waiting
 									</div>
 								</td>
@@ -286,7 +286,7 @@ function Orders() {
 								<td>
 									<div className='flex items-center space-x-3'>
 										<div className='avatar'>
-											<div className='mask mask-squircle w-12 h-12'>
+											<div className='w-12 h-12 mask mask-squircle'>
 												<img
 													src={Avatar8}
 													alt='Avatar 8'
@@ -302,7 +302,7 @@ function Orders() {
 								<td>Charents 8</td>
 								<td>Pick by Yourself</td>
 								<td>
-									<div className='badge badge-error py-2 px-1 rounded'>
+									<div className='px-1 py-2 rounded badge badge-error'>
 										Cancelled
 									</div>
 								</td>

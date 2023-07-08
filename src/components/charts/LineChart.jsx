@@ -73,7 +73,9 @@ export const data = {
 function LineChart() {
 	return (
 		<>
-			<h2 className='text-xl font-bold text-[dimgrey] mt-2 mb-4'>Daily Sales</h2>
+			<h2 className='text-xl font-bold text-[dimgrey] mt-2 mb-4'>
+				Daily Sales
+			</h2>
 			<Line
 				options={options}
 				data={data}

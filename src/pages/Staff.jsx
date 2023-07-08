@@ -11,9 +11,9 @@ function Staff() {
 
 	return (
 		<>
-			<div className='overflow-x-auto w-full'>
-				<div className='lg:my-4 max_md:mb-5 h-16 grid grid-cols-4 lg:gap-24 max_md:gap-y-4 max_md:gap-x-8 w-full max_md:grid-cols-2 max_md:h-28'>
-				{/* <div className='lg:my-4 max_md:mb-5 max_md:fixed max_md:top-22 h-16 grid grid-cols-4 lg:gap-24 max_md:gap-y-4 max_md:gap-x-8 w-full max_md:w-[96.3vw] max_md:grid-cols-2 max_md:h-28'> */}
+			<div className='w-full overflow-x-auto'>
+				<div className='grid w-full h-16 grid-cols-4 lg:my-4 max_md:mb-5 lg:gap-24 max_md:gap-y-4 max_md:gap-x-8 max_md:grid-cols-2 max_md:h-28'>
+					{/* <div className='lg:my-4 max_md:mb-5 max_md:fixed max_md:top-22 h-16 grid grid-cols-4 lg:gap-24 max_md:gap-y-4 max_md:gap-x-8 w-full max_md:w-[96.3vw] max_md:grid-cols-2 max_md:h-28'> */}
 					<button
 						onClick={() => toggleTab(1)}
 						className={`${

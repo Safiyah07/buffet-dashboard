@@ -6,7 +6,6 @@ import { IoIosPeople } from 'react-icons/io'
 import {
 	IoPersonCircleSharp,
 	IoNotificationsOutline,
-	IoPerson,
 	IoClose,
 } from 'react-icons/io5'
 import {
@@ -25,17 +24,70 @@ import AvatarImage from '../shared/AvatarImage'
 import ThemeContext from '../context/ThemeContext'
 
 function Navbar() {
+	const navbarItems = [
+		{
+			id: 1,
+			title: 'dashboard',
+			icon: <TbLayout2 />,
+		},
+		{
+			id: 2,
+			title: 'menu',
+			icon: <VscLayoutMenubar />,
+		},
+		{
+			id: 3,
+			title: 'orders',
+			icon: <TbPhoneCheck />,
+		},
+		{
+			id: 4,
+			title: 'staff',
+			icon: <IoIosPeople />,
+		},
+		{
+			id: 5,
+			title: 'delivery',
+			icon: <TbTruckDelivery />,
+		},
+		{
+			id: 6,
+			title: 'analytics',
+			icon: <BsBarChartLine />,
+		},
+		{
+			id: 7,
+			title: 'messenger',
+			icon: <TbMessageCircle2 />,
+		},
+		{
+			id: 6,
+			title: 'calender',
+			icon: <BsCalendar2Date />,
+		},
+		{
+			id: 7,
+			title: 'Notification',
+			icon: <IoNotificationsOutline />,
+		},
+		{
+			id: 8,
+			title: 'settings',
+			icon: <TbSettings />,
+		},
+		{
+			id: 9,
+			title: 'log-out',
+			icon: <IoPersonCircleSharp />,
+		},
+	]
+
 	const [showMenu, setShowMenu] = useState(true)
-	const [showProfileMenu, setShowProfileMenu] = useState(true)
 
 	const { theme, handleToggle } = useContext(ThemeContext)
 
 	const menuDisplay = () => {
 		setShowMenu((prevState) => !prevState)
-	}
-
-	const profileMenuDisplay = () => {
-		setShowProfileMenu((prevState) => !prevState)
 	}
 
 	return (
@@ -47,7 +99,7 @@ function Navbar() {
 						className='cursor-pointer'
 						onClick={menuDisplay}
 					>
-						<div className='border-2 border-violet-200 rounded-xl p-2 sm:p-1 '>
+						<div className='p-2 border-2 border-violet-200 rounded-xl sm:p-1 '>
 							{showMenu ? (
 								<BiMenuAltLeft size='20px' />
 							) : (
@@ -63,88 +115,23 @@ function Navbar() {
 								? 'hidden'
 								: `${
 										theme === 'light' ? 'shadow' : 'shadow-2xl'
-								  } absolute mt-3 p-2 bg-base-100 rounded-box w-[97vw] z-10`
+								} absolute mt-3 p-2 bg-base-100 rounded-box w-[97vw] z-10`
 						}
 					>
-						<li>
-							<Link
-								to='/'
-								className='flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
+						{navbarItems.map((Item) => (
+							<li
+								key={Item.id}
+								className='capitalize'
 							>
-								<TbLayout2 className='mr-2' />
-								Dashboard
-							</Link>
-						</li>
-						<hr />
-						<li>
-							<Link
-								to='/menu'
-								className='flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
-							>
-								<VscLayoutMenubar className='mr-2' />
-								Menu
-							</Link>
-						</li>
-						<hr />
-						<li>
-							<Link
-								to='/orders'
-								className='flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
-							>
-								<TbPhoneCheck className='mr-2' />
-								Orders
-							</Link>
-						</li>
-						<hr />
-						<li>
-							<Link
-								to='/staff'
-								className='flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
-							>
-								<IoIosPeople className='mr-2' />
-								Staff
-							</Link>
-						</li>
-						<hr />
-						<li>
-							<Link
-								to='/delivery'
-								className='flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
-							>
-								<TbTruckDelivery className='mr-2' />
-								Delivery
-							</Link>
-						</li>
-						<hr />
-						<li>
-							<Link
-								to='/analytics'
-								className='flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
-							>
-								<BsBarChartLine className='mr-2' />
-								Analytics
-							</Link>
-						</li>
-						<hr />
-						<li>
-							<Link
-								to='/messenger'
-								className='flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
-							>
-								<TbMessageCircle2 className='mr-2' />
-								Messenger
-							</Link>
-						</li>
-						<hr />
-						<li>
-							<Link
-								to='/calender'
-								className='flex p-2 rounded hover:bg-light-purple hover:text-white'
-							>
-								<BsCalendar2Date className='mr-2' />
-								Calender
-							</Link>
-						</li>
+								<Link
+									to={`/${Item.title}`}
+									className='flex items-center px-2 py-[10px] rounded hover:bg-light-purple hover:text-white'
+								>
+									<span className='mr-2'>{Item.icon}</span>
+									{Item.title}
+								</Link>
+							</li>
+						))}
 					</ul>
 				</div>
 				<div className='flex items-center max_md:hidden'>
@@ -164,12 +151,12 @@ function Navbar() {
 				</div>
 				<Link
 					to='/'
-					className='p-4 flex items-center lg:hidden'
+					className='flex items-center p-4 lg:hidden'
 				>
 					<img
 						src={theme === 'light' ? DashboardLogo : DashboardLogoDark}
 						alt='Logo'
-						className='sm:w-7 sm:h-7 w-10 h-10'
+						className='w-10 h-10 sm:w-7 sm:h-7'
 						// width='40px'
 						// height='40px'
 					/>
@@ -192,13 +179,13 @@ function Navbar() {
 							id='search'
 							name='search'
 							placeholder='Search'
-							className='input input-bordered w-full h-9 my-2 border-2 border-violet-200'
+							className='w-full my-2 border-2 input input-bordered h-9 border-violet-200'
 						/>
 					</div>
 
 					{/* Notification Icon for md and lg */}
 					<div className='flex'>
-						<div className='border-2 border-violet-200 rounded-xl p-2 max_md:mr-2 sm:hidden'>
+						<div className='p-2 border-2 border-violet-200 rounded-xl max_md:mr-2 sm:hidden'>
 							<Link to='/notifications'>
 								<IoNotificationsOutline size='20px' />
 							</Link>
@@ -206,7 +193,7 @@ function Navbar() {
 
 						{/* Toggle theme */}
 						<div>
-							<label className='swap swap-rotate border-2 border-violet-200 rounded-xl p-2 lg:ml-2 max_md:mr-2 sm:p-1'>
+							<label className='p-2 border-2 swap swap-rotate border-violet-200 rounded-xl lg:ml-2 max_md:mr-2 sm:p-1'>
 								<input
 									type='checkbox'
 									onChange={handleToggle}
@@ -214,77 +201,19 @@ function Navbar() {
 									checked={theme === 'light' ? false : true}
 								/>
 
-								<BiSun className='swap-on fill-current w-5 h-5' />
+								<BiSun className='w-5 h-5 fill-current swap-on' />
 
-								<BiMoon className='swap-off fill-current w-5 h-5' />
+								<BiMoon className='w-5 h-5 fill-current swap-off' />
 							</label>
 						</div>
 
-						{/* Dropdown for profile and settings and search and sm:Notification */}
-						<div className='lg:hidden'>
-							<label
-								tabIndex={0}
-								className='cursor-pointer'
-								onClick={profileMenuDisplay}
-							>
-								<div className='w-10 h-10 sm:h-8 sm:w-8 lg:mr-3 rounded-xl border-2 overflow-hidden border-violet-200'>
-									<img
-										src={Profile}
-										alt='Profile_Image'
-									/>
-								</div>
-							</label>
-							<ul
-								tabIndex={0}
-								className={
-									showProfileMenu
-										? 'hidden'
-										: `${
-												theme === 'light' ? 'shadow' : 'shadow-2xl'
-										  } absolute right-0 mt-3 p-2 shadow bg-base-100 rounded-box w-60`
-								}
-								onClick={profileMenuDisplay}
-							>
-								<li>
-									<Link
-										to='/profile'
-										className='flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
-									>
-										<IoPerson className='mr-2' />
-										Profile
-									</Link>
-								</li>
-								<hr />
-								<li>
-									<Link
-										to='/notification'
-										className='md:hidden lg:hidden flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
-									>
-										<IoNotificationsOutline className='mr-2' />
-										Notification
-									</Link>
-								</li>
-								<hr />
-								<li>
-									<Link
-										to='/settings'
-										className='flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
-									>
-										<TbSettings className='mr-2' />
-										Settings
-									</Link>
-								</li>
-								<hr />
-								<li>
-									<Link
-										to='/log-out'
-										className='flex items-center p-2 rounded hover:bg-light-purple hover:text-white'
-									>
-										<IoPersonCircleSharp className='mr-2' />
-										Log Out
-									</Link>
-								</li>
-							</ul>
+						<div className='w-10 h-10 overflow-hidden border-2 cursor-pointer lg:hidden sm:h-8 sm:w-8 lg:mr-3 rounded-xl border-violet-200'>
+							<Link to='/profile'>
+								<img
+									src={Profile}
+									alt='Profile_Image'
+								/>
+							</Link>
 						</div>
 					</div>
 				</div>

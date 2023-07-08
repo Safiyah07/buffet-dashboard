@@ -1,4 +1,3 @@
-import React from 'react'
 import FoodPic2 from '../assets/FoodPic2.jpg'
 import FoodPic3 from '../assets/FoodPic3.jpg'
 import FoodPic5 from '../assets/FoodPic5.jpg'
@@ -10,12 +9,12 @@ function Menu() {
 	return (
 		<>
 			<div>
-				<div className='flex min_lg:flex-col max_md:flex-col gap-6 w-full text-dimgrey'>
+				<div className='flex w-full gap-6 min_lg:flex-col max_md:flex-col text-dimgrey'>
 					<div className='flex flex-col'>
-						<h2 className='mb-4 text-center font-bold'>
+						<h2 className='mb-4 font-bold text-center'>
 							Top Sellings of the Day
 						</h2>
-						<div className='grid lg:grid-cols-4 lg_screen2:grid-cols-3 max_md:grid-cols-2 gap-4'>
+						<div className='grid gap-4 lg:grid-cols-4 lg_screen2:grid-cols-3 max_md:grid-cols-2'>
 							<div>
 								<FoodImage>
 									<img
@@ -23,7 +22,7 @@ function Menu() {
 										alt=''
 									/>
 								</FoodImage>
-								<div className='flex justify-between items-center lg_screen:text-sm'>
+								<div className='flex items-center justify-between lg_screen:text-sm'>
 									<p>Pasta</p>
 									<p>$11.40</p>
 								</div>
@@ -38,7 +37,7 @@ function Menu() {
 										alt=''
 									/>
 								</FoodImage>
-								<div className='flex justify-between items-center lg_screen:text-sm'>
+								<div className='flex items-center justify-between lg_screen:text-sm'>
 									<p>Pasta</p>
 									<p>$11.40</p>
 								</div>
@@ -53,7 +52,7 @@ function Menu() {
 										alt=''
 									/>
 								</FoodImage>
-								<div className='flex justify-between items-center lg_screen:text-sm'>
+								<div className='flex items-center justify-between lg_screen:text-sm'>
 									<p>Pasta</p>
 									<p>$11.40</p>
 								</div>
@@ -68,7 +67,7 @@ function Menu() {
 										alt=''
 									/>
 								</FoodImage>
-								<div className='flex justify-between items-center lg_screen:text-sm'>
+								<div className='flex items-center justify-between lg_screen:text-sm'>
 									<p>Pasta</p>
 									<p>$11.40</p>
 								</div>
@@ -83,7 +82,7 @@ function Menu() {
 										alt=''
 									/>
 								</FoodImage>
-								<div className='flex justify-between items-center lg_screen:text-sm'>
+								<div className='flex items-center justify-between lg_screen:text-sm'>
 									<p>Pasta</p>
 									<p>$11.40</p>
 								</div>
@@ -98,7 +97,7 @@ function Menu() {
 										alt=''
 									/>
 								</FoodImage>
-								<div className='flex justify-between items-center lg_screen:text-sm'>
+								<div className='flex items-center justify-between lg_screen:text-sm'>
 									<p>Pasta</p>
 									<p>$11.40</p>
 								</div>
@@ -113,7 +112,7 @@ function Menu() {
 										alt=''
 									/>
 								</FoodImage>
-								<div className='flex justify-between items-center lg_screen:text-sm'>
+								<div className='flex items-center justify-between lg_screen:text-sm'>
 									<p>Pasta</p>
 									<p>$11.40</p>
 								</div>
@@ -128,7 +127,7 @@ function Menu() {
 										alt=''
 									/>
 								</FoodImage>
-								<div className='flex justify-between items-center lg_screen:text-sm'>
+								<div className='flex items-center justify-between lg_screen:text-sm'>
 									<p>Pasta</p>
 									<p>$11.40</p>
 								</div>
@@ -139,10 +138,10 @@ function Menu() {
 						</div>
 
 						<div className='mt-8 max_md:mx-auto'>
-							<h2 className='mb-4 text-center font-bold'>
+							<h2 className='mb-4 font-bold text-center'>
 								Currently Not Available
 							</h2>
-							<div className='grid grid-cols-3 max_md:grid-cols-1 gap-4'>
+							<div className='grid grid-cols-3 gap-4 max_md:grid-cols-1'>
 								<div>
 									<img
 										src={FoodPic3}
@@ -175,19 +174,19 @@ function Menu() {
 							<DoughnutChart />
 						</div>
 						<div className='my-6'>
-							<h1 className='mb-4 text-center font-bold'>
+							<h1 className='mb-4 font-bold text-center'>
 								Todays Specials and Promotions
 							</h1>
 							<div className='flex max_md:justify-center w-[80%] min_lg:w-full max_md:w-full'>
 								<img
 									src={FoodPic8}
 									alt=''
-									className='h-48 w-full rounded-2xl p-2 lg_screen:h-40'
+									className='w-full h-48 p-2 rounded-2xl lg_screen:h-40'
 								/>
 								<img
 									src={FoodPic8}
 									alt=''
-									className='h-48 w-full rounded-2xl p-2 lg_screen:h-40'
+									className='w-full h-48 p-2 rounded-2xl lg_screen:h-40'
 								/>
 							</div>
 						</div>

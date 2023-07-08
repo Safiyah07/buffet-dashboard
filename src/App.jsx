@@ -20,7 +20,7 @@ function App() {
 		<>
 			<ThemeProvider>
 				<Router>
-					<div className='py-4 lg:px-6 flex lg:gap-4 h-screen'>
+					<div className='flex h-screen py-4 lg:px-6 lg:gap-4'>
 						<div className='lg:grow-[2]'>
 							<DashboardSidebar />
 						</div>
@@ -29,7 +29,7 @@ function App() {
 							<Navbar />
 							<Routes>
 								<Route
-									path='/'
+									path='/dashboard'
 									element={<Dashboard />}
 								></Route>
 								<Route
