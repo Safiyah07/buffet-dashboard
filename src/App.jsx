@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard'
 import Menu from './pages/Menu'
 import Orders from './pages/Orders'
 import Staff from './pages/Staff'
+import Delivery from './pages/Delivery'
 import Analytics from './pages/Analytics'
 // import Calender from './pages/Calender'
 // import Calender2 from './pages/Calender2'
@@ -45,7 +46,7 @@ function App() {
 								></Route>
 								<Route
 									path='/delivery'
-									element={<Dashboard />}
+									element={<Delivery />}
 								></Route>
 								<Route
 									path='/analytics'
