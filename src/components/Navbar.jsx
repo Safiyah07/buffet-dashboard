@@ -29,56 +29,67 @@ function Navbar() {
 			id: 1,
 			title: 'dashboard',
 			icon: <TbLayout2 />,
+			link: ''
 		},
 		{
 			id: 2,
 			title: 'menu',
 			icon: <VscLayoutMenubar />,
+			link: 'menu'
 		},
 		{
 			id: 3,
 			title: 'orders',
 			icon: <TbPhoneCheck />,
+			link: 'orders'
 		},
 		{
 			id: 4,
 			title: 'staff',
 			icon: <IoIosPeople />,
+			link: 'staff'
 		},
 		{
 			id: 5,
 			title: 'delivery',
 			icon: <TbTruckDelivery />,
+			link: 'delivery'
 		},
 		{
 			id: 6,
 			title: 'analytics',
 			icon: <BsBarChartLine />,
+			link: 'analytics'
 		},
 		{
 			id: 7,
 			title: 'messenger',
 			icon: <TbMessageCircle2 />,
-		},
-		{
-			id: 6,
-			title: 'calender',
-			icon: <BsCalendar2Date />,
-		},
-		{
-			id: 7,
-			title: 'Notification',
-			icon: <IoNotificationsOutline />,
+			link: 'messenger'
 		},
 		{
 			id: 8,
-			title: 'settings',
-			icon: <TbSettings />,
+			title: 'calender',
+			icon: <BsCalendar2Date />,
+			link: 'calender'
 		},
 		{
 			id: 9,
+			title: 'Notification',
+			icon: <IoNotificationsOutline />,
+			link: 'notification'
+		},
+		{
+			id: 10,
+			title: 'settings',
+			icon: <TbSettings />,
+			link: 'settings'
+		},
+		{
+			id: 11,
 			title: 'log-out',
 			icon: <IoPersonCircleSharp />,
+			link: 'log-out'
 		},
 	]
 
@@ -124,7 +135,7 @@ function Navbar() {
 								className='capitalize'
 							>
 								<Link
-									to={`/${Item.title}`}
+									to={`/${Item.link}`}
 									className='flex items-center px-2 py-[10px] rounded hover:bg-light-purple hover:text-white'
 								>
 									<span className='mr-2'>{Item.icon}</span>

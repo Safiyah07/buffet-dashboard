@@ -28,10 +28,6 @@ function App() {
 						<div className='w-full grow-[5] xl:ml[12vw] max_lg:ml-[18.5vw] min_lg:ml-[20.5vw] lg:ml-[17vw] lg:pl-2 max_md:px-2'>
 							<Navbar />
 							<Routes>
-							{/* <Route
-									path='/'
-									element={<Dashboard />}
-								></Route> */}
 								<Route
 									path='/'
 									element={<Dashboard />}

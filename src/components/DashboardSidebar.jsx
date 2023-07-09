@@ -57,7 +57,7 @@ function DashboardSidebar() {
 			link: 'messenger'
 		},
 		{
-			id: 6,
+			id: 8,
 			title: 'calender',
 			icon: <BsCalendar2Date />,
 			link: 'calender'
