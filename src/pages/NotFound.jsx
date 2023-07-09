@@ -1,4 +1,4 @@
-function NotFound() {
+export const NotFound = () => {
 	return (
 		<>
 			<div className='flex flex-col text-lg text-lime-300'>
@@ -8,5 +8,3 @@ function NotFound() {
 		</>
 	)
 }
-
-export default NotFound

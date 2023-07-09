@@ -9,7 +9,7 @@ import Avatar7 from '../assets/Avatar7.png'
 import Avatar8 from '../assets/Avatar8.png'
 // import Avatar10 from '../assets/Avatar10.png'
 
-function Orders() {
+export const Orders = () => {
 	return (
 		<>
 			<div className='w-full overflow-x-auto'>

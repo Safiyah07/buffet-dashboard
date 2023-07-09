@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import ThemeContext from '../context/ThemeContext'
 
-function Footer() {
+export const Footer = () => {
 	const { theme } = useContext(ThemeContext)
 
 	const footerYear = new Date().getFullYear()

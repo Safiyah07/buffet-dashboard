@@ -2,7 +2,7 @@ import { useState } from 'react'
 import AllEmployees from '../components/AllEmployees'
 // import Avatar10 from '../assets/Avatar10.png'
 
-function Staff() {
+export const Staff = () => {
 	const [tab, setTab] = useState(1)
 
 	const toggleTab = (id) => {

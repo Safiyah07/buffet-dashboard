@@ -12,7 +12,7 @@ import { IoPersonCircleSharp } from 'react-icons/io5'
 import { BsBarChartLine, BsCalendar2Date } from 'react-icons/bs'
 import DashboardLogo from '../assets/DashboardLogo.png'
 
-function DashboardSidebar() {
+export const DashboardSidebar = () => {
 	const navbarItems = [
 		{
 			id: 1,

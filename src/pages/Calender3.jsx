@@ -9,7 +9,7 @@ import {
 	parse,
 } from 'date-fns'
 
-function Calender3() {
+export const Calender3 = () => {
 	// YEAR
 	const year = new Date().getFullYear()
 
@@ -120,5 +120,3 @@ function Calender3() {
 		</>
 	)
 }
-
-export default Calender3

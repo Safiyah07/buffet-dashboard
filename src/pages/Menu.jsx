@@ -5,7 +5,7 @@ import FoodPic8 from '../assets/FoodPic8.jpg'
 import FoodImage from '../shared/FoodImage'
 import DoughnutChart from './../components/charts/DoughnutChart'
 
-function Menu() {
+export const Menu = () => {
 	return (
 		<>
 			<div>

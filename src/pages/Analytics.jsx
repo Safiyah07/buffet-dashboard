@@ -2,7 +2,7 @@ import { useState } from 'react'
 import LineChart from '../components/charts/LineChart'
 import DoughnutChart from '../components/charts/DoughnutChart'
 
-function Analytics() {
+export const Analytics = () => {
 	const [tab, setTab] = useState(1)
 
 	const toggleTab = (id) => {
@@ -13,8 +13,7 @@ function Analytics() {
 		<>
 			<div className='w-full'>
 				<div
-					className='lg:my-4 max_md:mb-5 grid grid-cols-4 lg:gap-x-12
-        lg:gap-y-6 max_md:gap-y-4 max_md:gap-x-8 w-full max_md:grid-cols-2'
+					className='grid w-full grid-cols-4 lg:my-4 max_md:mb-5 lg:gap-x-12 lg:gap-y-6 max_md:gap-y-4 max_md:gap-x-8 max_md:grid-cols-2'
 				>
 					<button
 						onClick={() => toggleTab(1)}
@@ -116,5 +115,3 @@ function Analytics() {
 		</>
 	)
 }
-
-export default Analytics

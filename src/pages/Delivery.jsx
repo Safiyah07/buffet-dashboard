@@ -4,7 +4,7 @@ import Avatar2 from '../assets/Avatar2.png'
 import Avatar3 from '../assets/Avatar3.png'
 // import Avatar4 from '../assets/Avatar4.png'
 
-function Delivery() {
+export const Delivery = () => {
 	return (
 		<>
 			<div className='flex flex-col'>
@@ -134,5 +134,3 @@ function Delivery() {
 		</>
 	)
 }
-
-export default Delivery

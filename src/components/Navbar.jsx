@@ -23,7 +23,7 @@ import DashboardLogoDark from '../assets/DashboardLogoDark.png'
 import AvatarImage from '../shared/AvatarImage'
 import ThemeContext from '../context/ThemeContext'
 
-function Navbar() {
+export const Navbar = () => {
 	const navbarItems = [
 		{
 			id: 1,
@@ -232,5 +232,3 @@ function Navbar() {
 		</>
 	)
 }
-
-export default Navbar

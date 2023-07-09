@@ -5,7 +5,7 @@ import LineChart from './../components/charts/LineChart'
 import DoughnutChart from './../components/charts/DoughnutChart'
 import VisaCard from './../assets/VisaCard.png'
 
-function Dashboard() {
+export const Dashboard = () => {
 	return (
 		<>
 			<div className='flex'>
@@ -44,5 +44,3 @@ function Dashboard() {
 		</>
 	)
 }
-
-export default Dashboard
