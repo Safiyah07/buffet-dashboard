@@ -58,7 +58,7 @@ export const Delivery = () => {
 	return (
 		<>
 			<div className='flex flex-col'>
-				<section className='flex md:flex-col items-center gap-4 pb-4'>
+				<section className='flex md:flex-col sm:flex-col items-center gap-4 pb-4'>
 					<div className='border-2 border-violet-shade rounded-xl p-2 w-[38%] md:w-full sm:w-full'>
 						<div className='flex items-center justify-between px-2 pb-4'>
 							<img
