@@ -34,7 +34,7 @@ const markers = [
 		customIcon: new Icon({
 			iconUrl: Avatar1,
 			iconSize: [38, 38], // size of the icon
-		})
+		}),
 	},
 	{
 		geocode: [48.85, 2.3522],
@@ -42,7 +42,7 @@ const markers = [
 		customIcon: new Icon({
 			iconUrl: Avatar2,
 			iconSize: [38, 38], // size of the icon
-		})
+		}),
 	},
 	{
 		geocode: [48.855, 2.34],
@@ -50,7 +50,7 @@ const markers = [
 		customIcon: new Icon({
 			iconUrl: Avatar3,
 			iconSize: [38, 38], // size of the icon
-		})
+		}),
 	},
 ]
 
@@ -58,8 +58,8 @@ export const Delivery = () => {
 	return (
 		<>
 			<div className='flex flex-col'>
-				<section className='flex items-center gap-4 pb-4'>
-					<div className='border-2 border-violet-shade rounded-xl p-2 w-[38%]'>
+				<section className='flex md:flex-col items-center gap-4 pb-4'>
+					<div className='border-2 border-violet-shade rounded-xl p-2 w-[38%] md:w-full sm:w-full'>
 						<div className='flex items-center justify-between px-2 pb-4'>
 							<img
 								src={Avatar1}
@@ -96,7 +96,7 @@ export const Delivery = () => {
 							<p>13</p>
 						</div>
 					</div>
-					<div className='border-2 border-violet-shade rounded-xl p-2 w-[38%]'>
+					<div className='border-2 border-violet-shade rounded-xl p-2 w-[38%] md:w-full sm:w-full'>
 						<div className='flex items-center justify-between px-2 pb-4'>
 							<img
 								src={Avatar2}
@@ -133,7 +133,7 @@ export const Delivery = () => {
 							<p>7</p>
 						</div>
 					</div>
-					<div className='border-2 border-violet-shade rounded-xl p-2 w-[38%]'>
+					<div className='border-2 border-violet-shade rounded-xl p-2 w-[38%] md:w-full sm:w-full'>
 						<div className='flex items-center justify-between px-2 pb-4'>
 							<img
 								src={Avatar3}
@@ -170,7 +170,7 @@ export const Delivery = () => {
 							<p>13</p>
 						</div>
 					</div>
-					<div className='border-2 border-violet-shade rounded-xl py-2 w-[38%] h-[12.8rem] flex items-center justify-center cursor-pointer'>
+					<div className='border-2 border-violet-shade rounded-xl py-2 w-[38%] md:w-full sm:w-full h-[12.8rem] flex items-center justify-center cursor-pointer'>
 						<TbPlus className='mr-2 text-white w-7 h-7 rounded-2xl bg-light-purple' />
 						<p className='text-light-purple'>Add new driver</p>
 					</div>
