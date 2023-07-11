@@ -77,7 +77,7 @@ export const Navbar = () => {
 			id: 9,
 			title: 'Notification',
 			icon: <IoNotificationsOutline />,
-			link: 'notification'
+			link: 'notifications'
 		},
 		{
 			id: 10,

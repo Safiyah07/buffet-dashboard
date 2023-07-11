@@ -23,7 +23,7 @@ import { Profile } from './pages/Profile'
 import { Messenger } from './pages/Messenger'
 import { NotFound } from './pages/NotFound'
 import { ThemeProvider } from './context/ThemeContext'
-import { Notification } from './pages/Notification'
+import { Notifications } from './pages/Notifications'
 
 function App() {
 	const router = createBrowserRouter(
@@ -73,8 +73,8 @@ function App() {
 					element={<Profile />}
 				/>
 				<Route
-					path='/notification'
-					element={<Notification />}
+					path='/notifications'
+					element={<Notifications />}
 				/>
 				<Route
 					path='/messenger'
