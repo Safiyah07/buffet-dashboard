@@ -1,36 +1,26 @@
 import 'leaflet/dist/leaflet.css'
-import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
-// import MarkerClusterGroup from "react-leaflet-cluster";
-
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import MarkerClusterGroup from 'react-leaflet-cluster'
 import { Icon, divIcon, point } from 'leaflet'
-
 import { TbPlus } from 'react-icons/tb'
 import Avatar1 from '../assets/Avatar1.png'
 import Avatar2 from '../assets/Avatar2.png'
 import Avatar3 from '../assets/Avatar3.png'
-import LocationPin from '../assets/locationPin.png'
-// import Avatar4 from '../assets/Avatar4.png'
-
-// create custom icon
-const customIcon = new Icon({
-	iconUrl: LocationPin,
-	iconSize: [38, 38], // size of the icon
-})
 
 // // custom cluster icon
-// const createClusterCustomIcon = function (cluster) {
-//   return new divIcon({
-//     html: `<span class="cluster-icon">${cluster.getChildCount()}</span>`,
-//     className: "custom-marker-cluster",
-//     iconSize: point(33, 33, true)
-//   });
-// };
+const createClusterCustomIcon = function (cluster) {
+  return new divIcon({
+    html: `<span className='text-white'>${cluster.getChildCount()}</span>`,
+    className: "h-12 w-12 rounded-[50%] bg-light-purple translate-y-[50%] translate-x-[50%] flex justify-center items-center font-black text-white text-2xl",
+    iconSize: point(33, 33, true)
+  });
+};
 
 // markers
 const markers = [
 	{
 		geocode: [48.86, 2.3522],
-		popUp: 'Hello, I am pop up 1',
+		popUp: 'Ryan Patel',
 		customIcon: new Icon({
 			iconUrl: Avatar1,
 			iconSize: [38, 38], // size of the icon
@@ -38,7 +28,7 @@ const markers = [
 	},
 	{
 		geocode: [48.85, 2.3522],
-		popUp: 'Hello, I am pop up 2',
+		popUp: 'Caleb Thompson',
 		customIcon: new Icon({
 			iconUrl: Avatar2,
 			iconSize: [38, 38], // size of the icon
@@ -46,7 +36,7 @@ const markers = [
 	},
 	{
 		geocode: [48.855, 2.34],
-		popUp: 'Hello, I am pop up 3',
+		popUp: 'James Mitchell',
 		customIcon: new Icon({
 			iconUrl: Avatar3,
 			iconSize: [38, 38], // size of the icon
@@ -57,8 +47,8 @@ const markers = [
 export const Delivery = () => {
 	return (
 		<>
-			<div className='flex flex-col'>
-				<section className='flex md:flex-col sm:flex-col items-center gap-4 pb-4'>
+			<div className='flex flex-col gap-5'>
+				<section className='flex md:flex-col sm:flex-col items-center gap-4'>
 					<div className='border-2 border-violet-shade rounded-xl p-2 w-[38%] md:w-full sm:w-full'>
 						<div className='flex items-center justify-between px-2 pb-4'>
 							<img
@@ -175,39 +165,28 @@ export const Delivery = () => {
 						<p className='text-light-purple'>Add new driver</p>
 					</div>
 				</section>
-				{/* <div className='flex gap-4 flex-wrap pb-5 max_md:w-[100%] max_md:justify-center'>
-					<div className='lg:grow-[4] max_md:w-[96vw] max_md:h-auto sm:hidden flex max_md:justify-center shadow-[1px_1px_3px_0px_grey] border-2 border-violet-shade rounded-xl py-2 px-7'>
-						<h1>Map</h1>
-					</div>
-				</div> */}
-				<div className='shadow-[1px_1px_3px_0px_grey] border-2 border-violet-shade rounded-xl h-[80vh]'>
+				<div className='shadow-[1px_1px_3px_0px_grey] border-2 border-violet-shade rounded-xl h-[50vh]'>
 					<MapContainer
-						// center={[51.505, -0.09]}
 						center={[48.8566, 2.3522]}
 						zoom={13}
 						scrollWheelZoom={false}
-						className='rounded-xl h-[80vh]'
+						className='rounded-xl h-[50vh]'
 					>
 						<TileLayer
 							attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 							url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 						/>
-						{markers.map((marker) => (
-							<Marker
-								position={marker.geocode}
-								icon={customIcon}
-								key={marker.geocode}
-							>
-								{/* <Popup>
-									A pretty CSS3 popup. <br /> Easily customizable.
-								</Popup> */}
-							</Marker>
-						))}
-						{/* <Marker position={[51.505, -0.09]}>
-							<Popup>
-								A pretty CSS3 popup. <br /> Easily customizable.
-							</Popup>
-						</Marker> */}
+						<MarkerClusterGroup chunkedLoading iconCreateFunction={createClusterCustomIcon}>
+							{markers.map((marker) => (
+								<Marker
+									position={marker.geocode}
+									icon={marker.customIcon}
+									key={marker.geocode}
+								>
+									<Popup>{marker.popUp}</Popup>
+								</Marker>
+							))}
+						</MarkerClusterGroup>
 					</MapContainer>
 				</div>
 			</div>
