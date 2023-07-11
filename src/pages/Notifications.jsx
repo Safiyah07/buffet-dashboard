@@ -38,7 +38,7 @@ export const Notifications = () => {
 			message: 'Pasta has been added to the menu for this week!',
 			image: (
 				<img
-					src={FoodPic2}
+					src={Avatar3}
 					className='w-10 h-10'
 				/>
 			),
@@ -49,7 +49,7 @@ export const Notifications = () => {
 			message: 'Doughnuts are unavailable for the week and probably the next!',
 			image: (
 				<img
-					src={FoodPic3}
+					src={Avatar9}
 					className='w-10 h-10'
 				/>
 			),
@@ -71,7 +71,7 @@ export const Notifications = () => {
 			message: "We're happy to announce the comeback of our signature meal!",
 			image: (
 				<img
-					src={FoodPic5}
+					src={Avatar5}
 					className='w-10 h-10'
 				/>
 			),
@@ -115,7 +115,7 @@ export const Notifications = () => {
 			message: 'Our specials are back!',
 			image: (
 				<img
-					src={FoodPic8}
+					src={Avatar1}
 					className='w-10 h-10'
 				/>
 			),
@@ -146,7 +146,7 @@ export const Notifications = () => {
 							className='flex items-center justify-between mb-2'
 						>
 							<div className='flex items-center gap-4 cursor-pointer sm:text-sm'>
-								<div className='sm:h-12 sm:w-16'>{notification.image}</div>
+								<div className='sm:w-16'>{notification.image}</div>
 								<div className='flex flex-col'>
 									<span>{notification.message}</span>
 									<span className='text-xs text-gray-400'>{notification.time}</span>
