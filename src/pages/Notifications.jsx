@@ -152,7 +152,7 @@ export const Notifications = () => {
 									<span className='text-xs text-gray-400'>{notification.time}</span>
 								</div>
 							</div>
-							<div className='text-sm'>{notification.date}</div>
+							<div className='text-sm sm:text-xs'>{notification.date}</div>
 						</div>
 					))}
 				</div>
