@@ -146,7 +146,7 @@ export const Notifications = () => {
 							className='flex items-center justify-between mb-2'
 						>
 							<div className='flex items-center gap-4 cursor-pointer sm:text-sm'>
-								<div className='sm:h-12 sm:w-14'>{notification.image}</div>
+								<div className='sm:h-12 sm:w-16'>{notification.image}</div>
 								<div className='flex flex-col'>
 									<span>{notification.message}</span>
 									<span className='text-xs text-gray-400'>{notification.time}</span>
