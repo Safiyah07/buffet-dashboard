@@ -9,7 +9,7 @@ import Avatar9 from '../assets/Avatar8.png'
 export const Notifications = () => {
 	const notificationItems = [
 		{
-			message: 'Henry Phillip just created an account as a driver!',
+			message: 'Henry Phillip just created an account as a driver, Welcome Henry!',
 			image: (
 				<img
 					src={Avatar1}
@@ -20,7 +20,7 @@ export const Notifications = () => {
 			date: 'Today',
 		},
 		{
-			message: 'Seline Kim is the new Sous chef, Welcome to the team!',
+			message: 'Congrats Seline Kim as the new Sous chef, Welcome to the team!',
 			image: (
 				<img
 					src={Avatar2}
@@ -31,7 +31,7 @@ export const Notifications = () => {
 			date: '11th June',
 		},
 		{
-			message: 'Pasta has been added to the menu for this week!',
+			message: "Pasta has been added to the menu for this week, You're welcome!",
 			image: (
 				<img
 					src={Avatar3}
@@ -53,7 +53,7 @@ export const Notifications = () => {
 			date: 'Last Month',
 		},
 		{
-			message: 'Henry Phillip just created an account as a driver!',
+			message: 'Henry Phillip just created an account as a driver, Welcome Henry!',
 			image: (
 				<img
 					src={Avatar3}
@@ -75,7 +75,7 @@ export const Notifications = () => {
 			date: 'Last Month',
 		},
 		{
-			message: 'Henry Phillip just created an accountas a driver!',
+			message: 'Henry Phillip just created an accountas a driver, Welcome Henry!',
 			image: (
 				<img
 					src={Avatar4}
@@ -86,7 +86,7 @@ export const Notifications = () => {
 			date: '20th May',
 		},
 		{
-			message: 'Henry Phillip just created an account as a driver!',
+			message: 'Henry Phillip just created an account as a driver, Welcome Henry!',
 			image: (
 				<img
 					src={Avatar5}
@@ -97,7 +97,7 @@ export const Notifications = () => {
 			date: '20th May',
 		},
 		{
-			message: 'Kristi May just created an account for takeaway!',
+			message: 'Kristi May just created an account for takeaway, Welcome to the team!',
 			image: (
 				<img
 					src={Avatar6}
@@ -108,7 +108,7 @@ export const Notifications = () => {
 			date: '20th May',
 		},
 		{
-			message: 'Our specials are back, You requested, we granted!',
+			message: "Our specials are back, You requested, we granted. You're welcome!",
 			image: (
 				<img
 					src={Avatar1}
@@ -141,10 +141,10 @@ export const Notifications = () => {
 							key={id}
 							className='flex items-center justify-between mb-2'
 						>
-							<div className='flex items-center gap-4 cursor-pointer sm:text-sm'>
-								<div className='w-12 sm:w-10'>{notification.image}</div>
+							<div className='flex items-center gap-2 cursor-pointer sm:text-sm'>
+								<div className='w-12 sm:w-14'>{notification.image}</div>
 								<div className='flex flex-col'>
-									<span className='sm:text-sm'>{notification.message}</span>
+									<span className='sm:text-xs'>{notification.message}</span>
 									<span className='text-xs text-gray-400'>{notification.time}</span>
 								</div>
 							</div>
