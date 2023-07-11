@@ -19,7 +19,6 @@ import { Analytics } from './pages/Analytics'
 import { Calender3 } from './pages/Calender3'
 import { Settings } from './pages/Settings'
 import { LogOut } from './pages/LogOut'
-import { Profile } from './pages/Profile'
 import { Messenger } from './pages/Messenger'
 import { NotFound } from './pages/NotFound'
 import { ThemeProvider } from './context/ThemeContext'
@@ -67,10 +66,6 @@ function App() {
 				<Route
 					path='/log-out'
 					element={<LogOut />}
-				/>
-				<Route
-					path='/profile'
-					element={<Profile />}
 				/>
 				<Route
 					path='/notifications'

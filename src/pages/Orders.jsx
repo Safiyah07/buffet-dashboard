@@ -7,7 +7,6 @@ import Avatar5 from '../assets/Avatar5.png'
 import Avatar6 from '../assets/Avatar6.png'
 import Avatar7 from '../assets/Avatar7.png'
 import Avatar8 from '../assets/Avatar8.png'
-// import Avatar10 from '../assets/Avatar10.png'
 
 export const Orders = () => {
 	return (

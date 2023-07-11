@@ -75,7 +75,7 @@ export const Navbar = () => {
 		},
 		{
 			id: 9,
-			title: 'Notification',
+			title: 'notifications',
 			icon: <IoNotificationsOutline />,
 			link: 'notifications'
 		},
@@ -147,12 +147,10 @@ export const Navbar = () => {
 				</div>
 				<div className='flex items-center max_md:hidden'>
 					<AvatarImage>
-						<Link to='/profile'>
 							<img
 								src={Profile}
 								alt=''
 							/>
-						</Link>
 					</AvatarImage>
 					<div className='flex-1 text-lg'>
 						{''}
@@ -218,13 +216,11 @@ export const Navbar = () => {
 							</label>
 						</div>
 
-						<div className='w-10 h-10 overflow-hidden border-2 cursor-pointer lg:hidden sm:h-8 sm:w-8 lg:mr-3 rounded-xl border-violet-200'>
-							<Link to='/profile'>
+						<div className='w-10 h-10 overflow-hidden border-2 lg:hidden sm:h-8 sm:w-8 lg:mr-3 rounded-xl border-violet-200'>
 								<img
 									src={Profile}
 									alt='Profile_Image'
 								/>
-							</Link>
 						</div>
 					</div>
 				</div>
