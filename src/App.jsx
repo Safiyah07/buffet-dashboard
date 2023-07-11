@@ -18,6 +18,7 @@ import { Analytics } from './pages/Analytics'
 // import {Calender2} from './pages/Calender2'
 import { Calender3 } from './pages/Calender3'
 import { Settings } from './pages/Settings'
+import { LogOut } from './pages/LogOut'
 import { NotFound } from './pages/NotFound'
 import { ThemeProvider } from './context/ThemeContext'
 
@@ -59,6 +60,10 @@ function App() {
 				<Route
 					path='/settings'
 					element={<Settings />}
+				/>
+				<Route
+					path='/log-out'
+					element={<LogOut />}
 				/>
 				<Route
 					path='/not-found'
