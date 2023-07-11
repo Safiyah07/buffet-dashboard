@@ -5,10 +5,6 @@ import Avatar4 from '../assets/Avatar4.png'
 import Avatar5 from '../assets/Avatar5.png'
 import Avatar6 from '../assets/Avatar6.png'
 import Avatar9 from '../assets/Avatar8.png'
-import FoodPic2 from '../assets/FoodPic2.jpg'
-import FoodPic3 from '../assets/FoodPic3.jpg'
-import FoodPic5 from '../assets/FoodPic5.jpg'
-import FoodPic8 from '../assets/FoodPic8.jpg'
 
 export const Notifications = () => {
 	const notificationItems = [
@@ -24,7 +20,7 @@ export const Notifications = () => {
 			date: 'Today',
 		},
 		{
-			message: 'Seline Kim is the new Sous chef!',
+			message: 'Seline Kim is the new Sous chef, Welcome to the team!',
 			image: (
 				<img
 					src={Avatar2}
@@ -112,7 +108,7 @@ export const Notifications = () => {
 			date: '20th May',
 		},
 		{
-			message: 'Our specials are back!',
+			message: 'Our specials are back, You requested, we granted!',
 			image: (
 				<img
 					src={Avatar1}
@@ -146,9 +142,9 @@ export const Notifications = () => {
 							className='flex items-center justify-between mb-2'
 						>
 							<div className='flex items-center gap-4 cursor-pointer sm:text-sm'>
-								<div className='sm:w-16'>{notification.image}</div>
+								<div className='w-12 sm:w-10'>{notification.image}</div>
 								<div className='flex flex-col'>
-									<span>{notification.message}</span>
+									<span className='sm:text-sm'>{notification.message}</span>
 									<span className='text-xs text-gray-400'>{notification.time}</span>
 								</div>
 							</div>
