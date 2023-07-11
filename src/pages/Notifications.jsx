@@ -149,10 +149,10 @@ export const Notifications = () => {
 								<div>{notification.image}</div>
 								<div className='flex flex-col'>
 									<span>{notification.message}</span>
-									<span className='text-sm text-gray-400'>{notification.time}</span>
+									<span className='text-xs text-gray-400'>{notification.time}</span>
 								</div>
 							</div>
-							<div className='items-end'>{notification.date}</div>
+							<div className='text-sm'>{notification.date}</div>
 						</div>
 					))}
 				</div>
