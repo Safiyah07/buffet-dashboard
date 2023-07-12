@@ -179,7 +179,7 @@ export const Messenger = () => {
 							<time className='text-xs opacity-50'>12:45</time>
 						</div>
 						<div className='chat-bubble'>
-							That's a bummer. Have you tried using a different approach?
+							That is a bummer. Have you tried using a different approach?
 						</div>
 						<div className='opacity-50 chat-footer'>Delivered</div>
 					</div>
@@ -197,7 +197,7 @@ export const Messenger = () => {
 							<time className='text-xs opacity-50'>12:45</time>
 						</div>
 						<div className='bg-light-purple chat-bubble'>
-							Yeah, I've been experimenting with different sales pitches and
+							Yeah, I have been experimenting with different sales pitches and
 							email, but nothing seems to work.
 						</div>
 						<div className='opacity-50 chat-footer'>Delivered</div>
