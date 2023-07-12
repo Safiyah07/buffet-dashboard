@@ -194,7 +194,7 @@ export const Navbar = () => {
 
 					{/* Notification Icon for md and lg */}
 					<div className='flex'>
-						<div className='p-2 border-2 border-violet-200 rounded-xl max_md:mr-2 sm:hidden'>
+						<div className='p-2 border-2 rounded-xl border-violet-200 max_md:mr-2 sm:hidden'>
 							<Link to='/notifications'>
 								<IoNotificationsOutline size='20px' />
 							</Link>
