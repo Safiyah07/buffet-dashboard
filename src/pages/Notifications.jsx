@@ -141,14 +141,14 @@ export const Notifications = () => {
 							key={id}
 							className='flex items-center justify-between mb-2'
 						>
-							<div className='flex items-center gap-2 cursor-pointer sm:text-sm'>
-								<div className='w-12 sm:w-14'>{notification.image}</div>
+							<div className='flex gap-2 cursor-pointer sm:text-sm'>
+								<div className='flex items-center w-12 sm:w-[70px]'>{notification.image}</div>
 								<div className='flex flex-col'>
 									<span className='sm:text-xs'>{notification.message}</span>
 									<span className='text-xs text-gray-400'>{notification.time}</span>
 								</div>
 							</div>
-							<div className='text-sm sm:text-xs'>{notification.date}</div>
+							<div className='flex self-start justify-end w-[95px] text-sm sm:text-xs'>{notification.date}</div>
 						</div>
 					))}
 				</div>
