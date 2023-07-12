@@ -88,7 +88,7 @@ export const DashboardSidebar = () => {
 	return (
 		<>
 			{/* Sidebar for larger screens */}
-			<div className='fixed xl:w-[17vw] text-black bg-violet-shade rounded-xl shadow-[1px_1px_3px_0px_grey] overflow-y-auto h-[96vh] z-10'>
+			<div className='fixed xl:w-[17vw] text-black bg-violet-shade rounded-lg shadow-[1px_1px_3px_0px_grey] overflow-y-auto h-[96vh] z-10'>
 				<div className='relative flex flex-col justify-between w-full h-full sm:hidden md:hidden'>
 					<Link
 						to='/'
