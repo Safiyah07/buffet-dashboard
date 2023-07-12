@@ -129,7 +129,7 @@ export const Messenger = () => {
 					))}
 				</div>
 				{/* Messages */}
-				<div className='w-full'>
+				<div className='w-full p-4 bg-purple-500 rounded-xl'>
 					<div className='chat chat-start'>
 						<div className='chat-image avatar'>
 							<div className='w-10 rounded-full'>
@@ -196,7 +196,7 @@ export const Messenger = () => {
 							Kevin Brown
 							<time className='text-xs opacity-50'>12:45</time>
 						</div>
-						<div className='chat-bubble'>
+						<div className='bg-light-purple chat-bubble'>
 							Yeah, I've been experimenting with different sales pitches and
 							email, but nothing seems to work.
 						</div>
