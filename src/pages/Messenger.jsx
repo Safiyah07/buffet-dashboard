@@ -146,9 +146,9 @@ export const Messenger = () => {
 
 	return (
 		<>
-			<div className='flex gap-5'>
+			<div className='flex gap-5 h-[86.6vh]'>
 				{/* Contacts */}
-				<div className='flex flex-col px-4 py-2 w-[45%] h-[86.6vh] bg-violet-200 rounded-xl sm:text-sm'>
+				<div className='flex flex-col px-4 py-2 w-[45%] bg-violet-200 rounded-xl sm:text-sm'>
 					<div className='rounded'>
 						<input
 							type='text'
@@ -219,22 +219,24 @@ export const Messenger = () => {
 							<p>+5</p>
 						</div>
 					</div>
-					<div className='w-full h-auto p-4 overflow-y-auto bg-gradient-to-r from-purple-400 via-purple-500 to-fuchsia-300 rounded-xl'>
-						{chatBox.map((chat, id) => (
-							<div key={id}>
-								<div className='chat chat-start'>
-									<div className='chat-image avatar'>
-										<div className='w-10 rounded-full'>{chat.image}</div>
+					<div className='flex flex-col h-[86.6vh] justify-between w-full p-4 overflow-y-auto bg-gradient-to-r from-purple-400 via-purple-500 to-fuchsia-300 rounded-xl'>
+						<div>
+							{chatBox.map((chat, id) => (
+								<div key={id}>
+									<div className='chat chat-start'>
+										<div className='chat-image avatar'>
+											<div className='w-10 rounded-full'>{chat.image}</div>
+										</div>
+										<div className='chat-header'>
+											{chat.name}
+											<time className='text-xs opacity-50'>{chat.time}</time>
+										</div>
+										<div className='chat-bubble'>{chat.message}</div>
+										<div className='opacity-50 chat-footer'>{chat.status}</div>
 									</div>
-									<div className='chat-header'>
-										{chat.name}
-										<time className='text-xs opacity-50'>{chat.time}</time>
-									</div>
-									<div className='chat-bubble'>{chat.message}</div>
-									<div className='opacity-50 chat-footer'>{chat.status}</div>
 								</div>
-							</div>
-						))}
+							))}
+						</div>
 						<div className='w-full bg-green-500'>hey</div>
 					</div>
 				</div>
