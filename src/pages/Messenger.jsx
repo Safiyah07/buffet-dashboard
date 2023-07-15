@@ -146,7 +146,7 @@ export const Messenger = () => {
 
 	return (
 		<>
-			<div className='flex gap- h-[86.6vh]'>
+			<div className='flex gap- h-[87.6vh]'>
 				{/* Contacts */}
 				<div className='flex flex-col px-4 py-2 w-[42%] bg-violet-200 rounded-tl-xl rounded-b-xl sm:text-sm'>
 					<div className='flex items-center justify-between rounded'>
@@ -227,7 +227,7 @@ export const Messenger = () => {
 								<p>+5</p>
 							</div>
 						</div>
-						<div className='flex flex-col h-[86.6vh] justify-between w-full p-4 overflow-y-auto text-white bg-gradient-to-r from-purple-400 via-purple-500 to-fuchsia-300 rounded-xl'>
+						<div className='flex flex-col h-[72.4vh] justify-between w-full p-4 overflow-y-auto text-white bg-gradient-to-r from-purple-400 via-purple-500 to-fuchsia-300 rounded-xl'>
 							<div>
 								{chatBox.map((chat, id) => (
 									<div key={id}>
@@ -247,7 +247,7 @@ export const Messenger = () => {
 									</div>
 								))}
 							</div>
-							<div className='w-full p-3 rounded-xl bg-gradient-to-r from-violet-400 to-violet-400'>
+							<div className='w-full px-3 py-2 rounded-xl bg-gradient-to-r from-violet-400 to-violet-400'>
 								<div className='flex items-center justify-between'>
 									<div className='flex items-center gap-2'>
 										<img
