@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { IoIosArrowDown } from 'react-icons/io'
-import { TbBookUpload, TbSettings } from 'react-icons/tb'
+import { IoIosArrowDown, IoIosPeople } from 'react-icons/io'
 import { LuVideo, LuPhoneCall, LuImage } from 'react-icons/lu'
+import { TbBookUpload, TbSettings, TbMessageSearch, TbStar, TbBell } from 'react-icons/tb'
 import Avatar1 from '../assets/Avatar1.png'
 import Avatar2 from '../assets/Avatar2.png'
 import Avatar3 from '../assets/Avatar3.png'
@@ -146,10 +146,10 @@ export const Messenger = () => {
 
 	return (
 		<>
-			<div className='flex gap-5 h-[86.6vh]'>
+			<div className='flex gap- h-[86.6vh]'>
 				{/* Contacts */}
-				<div className='flex flex-col px-4 py-2 w-[45%] bg-violet-200 rounded-xl sm:text-sm'>
-					<div className='rounded'>
+				<div className='flex flex-col px-4 py-2 w-[42%] bg-violet-200 rounded-tl-xl rounded-b-xl sm:text-sm'>
+					<div className='flex items-center justify-between rounded'>
 						<input
 							type='text'
 							id='search'
@@ -191,53 +191,82 @@ export const Messenger = () => {
 				</div>
 				{/* Messages */}
 				<div className='flex flex-col w-full gap-2'>
-					<div className='flex items-center justify-between w-full px-4 py-2 bg-violet-200 rounded-xl'>
-						<h1 className='font-black'>Sales Team</h1>
-						<div className='flex gap-2'>
-							<LuVideo />
-							<LuPhoneCall />
-							<LuImage />
-							<TbBookUpload />
-							<TbSettings />
+					<div className='flex justify-end w-full gap-2 px-4 py-3 bg-violet-200 rounded-br-xl'>
+            <TbMessageSearch />
+            <IoIosPeople />
+            <TbStar />
+            <TbBell />
+            <TbSettings />
+          </div>
+					<div className='ml-5'>
+						<div className='flex items-center justify-between w-full px-4 py-2 mb-2 bg-violet-200 rounded-xl'>
+							<h1 className='font-black'>Sales Team</h1>
+							<div className='flex gap-2'>
+								<LuVideo />
+								<LuPhoneCall />
+								<LuImage />
+								<TbBookUpload />
+								<TbSettings />
+							</div>
+							<div className='flex items-center'>
+								<img
+									src={Avatar1}
+									className='w-8 h-8'
+									alt=''
+								/>
+								<img
+									src={Avatar2}
+									className='w-8 h-8'
+									alt=''
+								/>
+								<img
+									src={Avatar3}
+									className='w-8 h-8'
+									alt=''
+								/>
+								<p>+5</p>
+							</div>
 						</div>
-						<div className='flex items-center'>
-							<img
-								src={Avatar1}
-								className='w-8 h-8'
-								alt=''
-							/>
-							<img
-								src={Avatar2}
-								className='w-8 h-8'
-								alt=''
-							/>
-							<img
-								src={Avatar3}
-								className='w-8 h-8'
-								alt=''
-							/>
-							<p>+5</p>
-						</div>
-					</div>
-					<div className='flex flex-col h-[86.6vh] justify-between w-full p-4 overflow-y-auto bg-gradient-to-r from-purple-400 via-purple-500 to-fuchsia-300 rounded-xl'>
-						<div>
-							{chatBox.map((chat, id) => (
-								<div key={id}>
-									<div className='chat chat-start'>
-										<div className='chat-image avatar'>
-											<div className='w-10 rounded-full'>{chat.image}</div>
+						<div className='flex flex-col h-[86.6vh] justify-between w-full p-4 overflow-y-auto text-white bg-gradient-to-r from-purple-400 via-purple-500 to-fuchsia-300 rounded-xl'>
+							<div>
+								{chatBox.map((chat, id) => (
+									<div key={id}>
+										<div className='mb-2 chat chat-start'>
+											<div className='chat-image avatar'>
+												<div className='w-10 rounded-full'>{chat.image}</div>
+											</div>
+											<div className='chat-header'>
+												{chat.name}
+												<time className='text-xs opacity-50'> {chat.time}</time>
+											</div>
+											<div className='text-white chat-bubble bg-violet-200'>
+												{chat.message}
+											</div>
+											{/* <div className='opacity-50 chat-footer'>{chat.status}</div> */}
 										</div>
-										<div className='chat-header'>
-											{chat.name}
-											<time className='text-xs opacity-50'>{chat.time}</time>
-										</div>
-										<div className='chat-bubble'>{chat.message}</div>
-										<div className='opacity-50 chat-footer'>{chat.status}</div>
+									</div>
+								))}
+							</div>
+							<div className='w-full p-3 rounded-xl bg-gradient-to-r from-violet-400 to-violet-400'>
+								<div className='flex items-center justify-between'>
+									<div className='flex items-center gap-2'>
+										<img
+											src={Avatar1}
+											className='w-8'
+											alt=''
+										/>
+										Say something
+									</div>
+									<div className='flex gap-2'>
+										<LuVideo />
+										<LuPhoneCall />
+										<LuImage />
+										<TbBookUpload />
+										<TbSettings />
 									</div>
 								</div>
-							))}
+							</div>
 						</div>
-						<div className='w-full bg-green-500'>hey</div>
 					</div>
 				</div>
 			</div>
