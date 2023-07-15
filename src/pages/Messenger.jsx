@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { IoIosArrowDown, IoIosPeople } from 'react-icons/io'
-import { LuVideo, LuPhoneCall, LuImage } from 'react-icons/lu'
+import {FaMicrophone, FaImage, FaVideo, FaAngleDown, FaUserFriends} from 'react-icons/fa'
+import {FaPhoneVolume} from 'react-icons/fa6'
 import { TbBookUpload, TbSettings, TbMessageSearch, TbStar, TbBell } from 'react-icons/tb'
 import Avatar1 from '../assets/Avatar1.png'
 import Avatar2 from '../assets/Avatar2.png'
@@ -161,7 +161,7 @@ export const Messenger = () => {
 					<div>
 						<h1 className='flex items-center justify-between mt-3 font-black'>
 							Team Messages (1)
-							<IoIosArrowDown />
+							<FaAngleDown />
 						</h1>
 					</div>
 					<div className='h-auto overflow-y-auto'>
@@ -193,7 +193,7 @@ export const Messenger = () => {
 				<div className='flex flex-col w-full gap-2'>
 					<div className='flex justify-end w-full gap-2 px-4 py-3 bg-violet-200 rounded-br-xl'>
             <TbMessageSearch />
-            <IoIosPeople />
+            <FaUserFriends />
             <TbStar />
             <TbBell />
             <TbSettings />
@@ -202,9 +202,9 @@ export const Messenger = () => {
 						<div className='flex items-center justify-between w-full px-4 py-2 mb-2 bg-violet-200 rounded-xl'>
 							<h1 className='font-black'>Sales Team</h1>
 							<div className='flex gap-2'>
-								<LuVideo />
-								<LuPhoneCall />
-								<LuImage />
+								<FaVideo />
+								<FaPhoneVolume />
+								<FaImage />
 								<TbBookUpload />
 								<TbSettings />
 							</div>
@@ -257,12 +257,10 @@ export const Messenger = () => {
 										/>
 										Say something
 									</div>
-									<div className='flex gap-2'>
-										<LuVideo />
-										<LuPhoneCall />
-										<LuImage />
-										<TbBookUpload />
-										<TbSettings />
+									<div className='flex items-center gap-2'>
+										<FaImage />
+                    <FaMicrophone />
+                    Send
 									</div>
 								</div>
 							</div>
