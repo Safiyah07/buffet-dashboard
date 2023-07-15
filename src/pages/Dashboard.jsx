@@ -24,7 +24,7 @@ export const Dashboard = () => {
 					</div>
 
 					<div className='flex w-full'>
-						<div className='w-full max_md:w-[96vw] flex lg:justify-between max_md:items-center flex-wrap max_md:flex-col gap-4 border-2 border-violet-shade shadow-[1px_1px_3px_0px_grey] rounded-xl pt-2 px-7'>
+						<div className='w-full max_md:w-[96vw] flex lg:justify-between max_md:items-center flex-wrap max_md:flex-col gap-4 border-2 border-violet-shade shadow-[1px_1px_3px_0px_grey] rounded-xl py-3 px-7'>
 							<div className='lg:w-auto h-auto md:w-[70%] sm:w-full'>
 								<LineChart />
 							</div>
