@@ -363,8 +363,6 @@ export const Messenger = () => {
 					{messages.map((message) => (
 						<div
 							key={message.id}
-							// className='flex justify-between my-2 bg-white'
-							// className={`${bg === true ? '' : ''} flex justify-between my-2 text-white`}
 							className={`${
 								theme === 'dark' && 'text-white'
 							} flex justify-between my-2`}
@@ -376,7 +374,7 @@ export const Messenger = () => {
 									<span className='sm:text-xs'>{message.name}</span>
 									<span
 										className={`${
-											theme === 'dark' && 'text-white'
+											theme === 'dark' && 'text-gray-300'
 										} text-sm text-gray-600 `}
 									>
 										{message.message}
