@@ -21,7 +21,7 @@ import Avatar5 from '../assets/Avatar5.png'
 import ThemeContext from '../context/ThemeContext'
 
 export const Messenger = () => {
-	const { theme, handleToggle } = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 	const [bg, setBg] = useState(false)
 
 	const [tab, setTab] = useState(1)

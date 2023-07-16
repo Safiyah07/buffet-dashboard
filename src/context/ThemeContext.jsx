@@ -3,6 +3,7 @@ import { useState, useEffect, createContext } from 'react'
 
 const ThemeContext = createContext()
 
+// eslint-disable-next-line react/prop-types
 export const ThemeProvider = ({ children }) => {
   // use theme from local storage if available or set light theme
 	const [theme, setTheme] = useState(
