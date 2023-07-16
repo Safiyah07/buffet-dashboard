@@ -441,13 +441,16 @@ export const Messenger = () => {
 											className='w-8'
 											alt=''
 										/>
-										Say something
+                    <input type="text" name="" id="" placeholder='Say Something' className='text-white border-none bg-gradient-to-r from-violet-400 to-violet-400' />
+                    <LuImage />
+										<FaMicrophone />
+                    Send
 									</div>
-									<div className='flex items-center gap-2'>
+									{/* <div className='flex items-center gap-2'>
 										<LuImage />
 										<FaMicrophone />
 										Send
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>
