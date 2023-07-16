@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import {
 	FaMicrophone,
 	FaAngleDown,
@@ -18,8 +18,10 @@ import Avatar2 from '../assets/Avatar2.png'
 import Avatar3 from '../assets/Avatar3.png'
 import Avatar4 from '../assets/Avatar4.png'
 import Avatar5 from '../assets/Avatar5.png'
+import ThemeContext from '../context/ThemeContext'
 
 export const Messenger = () => {
+	const { theme, handleToggle } = useContext(ThemeContext)
 	const [bg, setBg] = useState(false)
 
 	const [tab, setTab] = useState(1)
@@ -362,14 +364,21 @@ export const Messenger = () => {
 						<div
 							key={message.id}
 							// className='flex justify-between my-2 bg-white'
-							className={`${bg === true ? '' : ''} flex justify-between my-2 `}
+							// className={`${bg === true ? '' : ''} flex justify-between my-2 text-white`}
+							className={`${
+								theme === 'dark' && 'text-white'
+							} flex justify-between my-2`}
 							onClick={changeBg}
 						>
 							<div className='flex gap-2 cursor-pointer sm:text-sm'>
 								<div className='flex self-start'>{message.image}</div>
 								<div className='flex flex-col'>
 									<span className='sm:text-xs'>{message.name}</span>
-									<span className='text-sm text-gray-600'>
+									<span
+										className={`${
+											theme === 'dark' && 'text-white'
+										} text-sm text-gray-600 `}
+									>
 										{message.message}
 									</span>
 								</div>
