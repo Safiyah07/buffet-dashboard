@@ -391,11 +391,11 @@ export const Messenger = () => {
 							<div className='flex gap-2'>
 								<TbVideo />
 								<LuPhoneCall />
-								<LuImage />
-								<TbBookUpload />
+								<LuImage className='sm:hidden' />
+								<TbBookUpload className='sm:hidden' />
 								<TbSettings />
 							</div>
-							<div className='flex items-center'>
+							<div className='flex items-center sm:hidden'>
 								<img
 									src={Avatar1}
 									className='w-8 h-8'
