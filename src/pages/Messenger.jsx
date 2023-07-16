@@ -434,23 +434,32 @@ export const Messenger = () => {
 								))}
 							</div>
 							<div className='w-full px-3 py-2 rounded-xl bg-gradient-to-r from-violet-400 to-violet-400'>
-								<div className='flex items-center justify-between'>
-									<div className='flex items-center gap-2'>
-										<img
-											src={Avatar1}
-											className='w-8'
-											alt=''
+								<div className='flex items-center w-full'>
+									<div className='flex items-center gap-2 w-[80%]'>
+										<span className='flex items-center pl-2'>
+											<img
+												src={Avatar1}
+												className='w-8'
+												alt=''
+											/>
+										</span>
+										<input
+											type='text'
+											name=''
+											id=''
+											placeholder='Say Something'
+											className='w-full text-white border-none outline-none bg-violet-400 placeholder:text-white'
 										/>
-                    <input type="text" name="" id="" placeholder='Say Something' className='text-white border-none bg-gradient-to-r from-violet-400 to-violet-400' />
-                    <LuImage />
-										<FaMicrophone />
-                    Send
 									</div>
-									{/* <div className='flex items-center gap-2'>
-										<LuImage />
-										<FaMicrophone />
-										Send
-									</div> */}
+									<div className='absolute flex items-center gap-2 right-12'>
+										<button>
+											<LuImage />
+										</button>
+										<button>
+											<FaMicrophone />
+										</button>
+										<button>Send</button>
+									</div>
 								</div>
 							</div>
 						</div>

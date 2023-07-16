@@ -188,7 +188,7 @@ export const Navbar = () => {
 							id='search'
 							name='search'
 							placeholder='Search'
-							className='w-full my-2 border-2 input input-bordered h-9 border-violet-200'
+							className='w-full my-2 border-2 outline-none input input-bordered h-9 border-violet-200'
 						/>
 					</div>
 
