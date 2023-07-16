@@ -451,7 +451,7 @@ export const Messenger = () => {
 											className='w-full text-white border-none outline-none bg-violet-400 placeholder:text-white'
 										/>
 									</div>
-									<div className='absolute flex items-center gap-2 right-12'>
+									<div className='flex items-center gap-2 sm:relative md:absolute md:right-12'>
 										<button>
 											<LuImage />
 										</button>
