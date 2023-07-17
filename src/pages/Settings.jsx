@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import SettingsTable from '../components/SettingsTable'
-// import Avatar10 from '../assets/Avatar10.png'
 
 export const Settings = () => {
 	const [tab, setTab] = useState(1)
@@ -11,7 +10,6 @@ export const Settings = () => {
 	return (
 		<>
 			<div className='w-full sm:overflow-x-auto'>
-				{/* <div className='grid w-full h-16 grid-cols-5 lg:my-4 max_md:mb-5 lg:gap-9 max_md:gap-y-4 max_md:gap-x-8 max_md:grid-cols-2 max_md:h-44'> */}
 				<div className='lg:my-4 md:mb-3 h-16 grid grid-cols-5 lg:gap-9 max_md:gap-x-4 w-full md:grid-cols-3 md:h-[7.5rem] sm:grid-cols-2 sm:h-36 sm:mb-12 sm:gap-y-4'>
 					<button
 						onClick={() => toggleTab(1)}

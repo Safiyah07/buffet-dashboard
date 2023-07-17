@@ -12,7 +12,6 @@ export const Orders = () => {
 	return (
 		<>
 			<div className='w-full overflow-x-auto'>
-				{/* <div className='lg:my-4 max_md:mb-5 h-16 max_md:h-28 grid grid-cols-4 lg:gap-24 max_md:gap-y-4 md:gap-x-8 sm:gap-x-8 max_md:grid-cols-2 w-full max_md:w-[96vw]'> */}
 				<div className='lg:my-4 max_md:mb-5 h-16 max_md:h-28 grid grid-cols-4 lg:gap-24 max_md:gap-y-4 md:gap-x-8 sm:gap-x-8 max_md:grid-cols-2 w-full max_md:w-[96vw]'>
 					<button className='btn btn-outline border-info hover:bg-transparent hover:text-inherit'>
 						Ordered 459
@@ -26,7 +25,6 @@ export const Orders = () => {
 					<button className='btn btn-outline border-error hover:bg-transparent hover:text-inherit'>
 						Canceled 70
 					</button>
-					{/* </div> */}
 				</div>
 
 				<div className='flex justify-between w-full'>

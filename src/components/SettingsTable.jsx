@@ -1,4 +1,3 @@
-
 function SettingsTable() {
 	return (
 		<>
@@ -20,24 +19,28 @@ function SettingsTable() {
 							<td>Dashboard</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
@@ -48,24 +51,28 @@ function SettingsTable() {
 							<td>Categories</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
@@ -76,24 +83,28 @@ function SettingsTable() {
 							<td>Menu</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
@@ -104,24 +115,28 @@ function SettingsTable() {
 							<td>Orders</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
@@ -133,24 +148,28 @@ function SettingsTable() {
 							<td>Staff</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
@@ -162,24 +181,28 @@ function SettingsTable() {
 							<td>Delivery</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
@@ -190,24 +213,28 @@ function SettingsTable() {
 							<td>Analytics</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
@@ -219,24 +246,28 @@ function SettingsTable() {
 							<td>Role Management</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
@@ -248,24 +279,28 @@ function SettingsTable() {
 							<td>News</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>
 							</td>
 							<td>
 								<input
+									name='checkbox'
 									type='checkbox'
 									className='accent-[mediumpurple] border-light-purple w-10 h-3'
 								/>

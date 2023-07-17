@@ -118,10 +118,11 @@ export const Messenger = () => {
 	])
 
 	const changeBg = (message, id) => {
-		const msgs = messages.findIndex((message) => message.id !== id)
-		const msg = messages.at(message.id)
+		const msgs = messages.findIndex((message) => message.id == id)
+		const msg = messages.at(message)
 		console.log(msg)
 		console.log(msgs)
+    console.log(messages.message);
 		// setBg((prevState) => !prevState)
 	}
 
@@ -187,7 +188,6 @@ export const Messenger = () => {
 					<div className='flex items-center justify-between rounded'>
 						<input
 							type='text'
-							id='search'
 							name='search'
 							placeholder='Search'
 							className='w-full my-2 input h-9'
@@ -297,8 +297,8 @@ export const Messenger = () => {
 										/>
                     <input
 											type='text'
-											name=''
-											id=''
+											name='text'
+											id='text'
 											placeholder='Say Something'
 											className='w-full text-white border-none outline-none bg-violet-400 placeholder:text-white'
 										/>
@@ -453,8 +453,7 @@ export const Messenger = () => {
 										</span>
 										<input
 											type='text'
-											name=''
-											id=''
+											name='text'
 											placeholder='Say Something'
 											className='w-full text-white border-none outline-none bg-violet-400 placeholder:text-white'
 										/>
