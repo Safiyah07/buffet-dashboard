@@ -283,25 +283,30 @@ export const Messenger = () => {
 											<div className='text-white chat-bubble bg-violet-200'>
 												{chat.message}
 											</div>
-											{/* <div className='opacity-50 chat-footer'>{chat.status}</div> */}
 										</div>
 									</div>
 								))}
 							</div>
-							<div className='w-full px-3 py-2 rounded-xl bg-gradient-to-r from-violet-400 to-violet-400'>
-								<div className='flex items-center justify-between'>
-									<div className='flex items-center gap-2'>
+							<div className='px-3 py-2 rounded-xl bg-gradient-to-r from-violet-400 to-violet-400'>
+								<div className='flex items-center justify-between w-full'>
+									<div className='flex items-center gap-2 w-[80%]'>
 										<img
 											src={Avatar1}
 											className='w-8'
 											alt=''
 										/>
-										Say something
+                    <input
+											type='text'
+											name=''
+											id=''
+											placeholder='Say Something'
+											className='w-full text-white border-none outline-none bg-violet-400 placeholder:text-white'
+										/>
 									</div>
 									<div className='flex items-center gap-2'>
 										<LuImage />
 										<FaMicrophone />
-										Send
+                    <button>Send</button>
 									</div>
 								</div>
 							</div>
@@ -325,9 +330,8 @@ export const Messenger = () => {
 					<button
 						onClick={() => toggleTab(1)}
 						className={`${
-							tab === 1
-								? 'btn border-b-2 border-b-light-purple bg-white border-light-purple'
-								: 'btn btn-outline bg-transparent'
+							tab === 1 && 'text-light-purple'
+						} btn bg-transparent border-0 border-b-2 border-b-light-purple border-light-purple
 						} `}
 					>
 						Messages
@@ -336,9 +340,8 @@ export const Messenger = () => {
 					<button
 						onClick={() => toggleTab(2)}
 						className={`${
-							tab === 2
-								? 'btn border-b-2 border-b-light-purple bg-white border-light-purple'
-								: 'btn btn-outline bg-transparent'
+							tab === 2 && 'text-light-purple'
+						} btn border-0 border-b-2 bg-transparent border-b-light-purple border-light-purple
 						} `}
 					>
 						Chats
@@ -347,10 +350,8 @@ export const Messenger = () => {
 					<button
 						onClick={() => toggleTab(3)}
 						className={`${
-							tab === 3
-								? 'btn border-b-2 border-b-light-purple bg-white border-light-purple'
-								: 'btn btn-outline bg-transparent'
-						} `}
+							tab === 3 && ' text-light-purple'
+						} btn border-0 border-b-2 bg-transparent border-b-light-purple border-light-purple`}
 					>
 						Calls
 					</button>
@@ -480,17 +481,21 @@ export const Messenger = () => {
 					{messages.map((message) => (
 						<div
 							key={message.id}
-							// className='flex justify-between my-2 bg-white'
-							className={`${bg === true ? '' : ''} flex justify-between my-2 `}
+							className={`${
+								theme === 'dark' && 'text-gray-300'
+							} flex items-center justify-between my-2 `}
 							onClick={changeBg}
 						>
 							<div className='flex items-center gap-2 cursor-pointer items sm:text-sm'>
 								<div className='flex self-start'>{message.image}</div>
 
-								<div className='sm:text-xs'>{message.name} called</div>
+								<div className='flex flex-col sm:text-xs'>
+									<span>{message.name}</span>
+									<span>{message.time}</span>
+								</div>
 							</div>
-							<div className='flex self-start justify-end text-xs'>
-								{message.time}
+							<div className=''>
+								<LuPhoneCall size={17} />
 							</div>
 						</div>
 					))}
