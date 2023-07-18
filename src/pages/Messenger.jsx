@@ -330,9 +330,9 @@ export const Messenger = () => {
 					<button
 						onClick={() => toggleTab(1)}
 						className={`${
-							tab === 1 && 'text-light-purple'
-						} btn bg-transparent border-0 border-b-2 border-b-light-purple border-light-purple
-						} `}
+							tab === 1 && 'text-violet-400'
+						} btn bg-transparent border-0 border-b-2 border-b-violet-400 
+						`}
 					>
 						Messages
 					</button>
@@ -340,9 +340,9 @@ export const Messenger = () => {
 					<button
 						onClick={() => toggleTab(2)}
 						className={`${
-							tab === 2 && 'text-light-purple'
-						} btn border-0 border-b-2 bg-transparent border-b-light-purple border-light-purple
-						} `}
+							tab === 2 && 'text-violet-400'
+						} btn border-0 border-b-2 bg-transparent border-b-violet-400
+						`}
 					>
 						Chats
 					</button>
@@ -350,8 +350,8 @@ export const Messenger = () => {
 					<button
 						onClick={() => toggleTab(3)}
 						className={`${
-							tab === 3 && ' text-light-purple'
-						} btn border-0 border-b-2 bg-transparent border-b-light-purple border-light-purple`}
+							tab === 3 && ' text-violet-400'
+						} btn border-0 border-b-2 bg-transparent border-b-violet-400`}
 					>
 						Calls
 					</button>
