@@ -22,7 +22,6 @@ import ThemeContext from '../context/ThemeContext'
 
 export const Messenger = () => {
 	const { theme } = useContext(ThemeContext)
-	const [bg, setBg] = useState(false)
 	const [chatSelected, setChatSelected] = useState(1)
 
 	const [tab, setTab] = useState(1)
@@ -118,15 +117,6 @@ export const Messenger = () => {
 		},
 	])
 
-	const changeBg = (message, id) => {
-		const msgs = messages.findIndex((message) => message.id == id)
-		const msg = messages.at(message)
-		console.log(msg)
-		console.log(msgs)
-		console.log(messages.message)
-		// setBg((prevState) => !prevState)
-	}
-
 	// eslint-disable-next-line no-unused-vars
 	const [chatBox, setChatBox] = useState([
 		{
@@ -202,18 +192,12 @@ export const Messenger = () => {
 							</h1>
 						</div>
 					</div>
-					{/* <div className='h-auto overflow-y-auto'> */}
-					<div
-						className={`${
-							bg === true ? 'bg-white' : ''
-						} h-auto overflow-y-auto `}
-					>
+					<div className='h-auto overflow-y-auto'>
 						{messages.map((message) => (
 							<div
 								key={message.id}
-								// className='flex justify-between my-2 bg-white'
 								className={`${
-									chatSelected === message.id ? 'bg-white' : ''
+									chatSelected === message.id && 'bg-white'
 								} flex justify-between py-2 px-3`}
 								onClick={() => setChatSelected(message.id)}
 							>
@@ -486,7 +470,6 @@ export const Messenger = () => {
 							className={`${
 								theme === 'dark' && 'text-gray-300'
 							} flex items-center justify-between my-2 `}
-							onClick={changeBg}
 						>
 							<div className='flex items-center gap-2 cursor-pointer items sm:text-sm'>
 								<div className='flex self-start'>{message.image}</div>
