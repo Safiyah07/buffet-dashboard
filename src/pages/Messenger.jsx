@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState, useContext } from 'react'
 import {
 	FaMicrophone,
@@ -23,13 +24,6 @@ import ThemeContext from '../context/ThemeContext'
 export const Messenger = () => {
 	const { theme } = useContext(ThemeContext)
 	const [chatSelected, setChatSelected] = useState(1)
-
-	const [tab, setTab] = useState(1)
-
-	const toggleTab = (id) => {
-		return setTab(id)
-	}
-	// eslint-disable-next-line no-unused-vars
 	const [messages, setMessages] = useState([
 		{
 			id: 1,
@@ -116,8 +110,6 @@ export const Messenger = () => {
 			message: 'The spices are on their way',
 		},
 	])
-
-	// eslint-disable-next-line no-unused-vars
 	const [chatBox, setChatBox] = useState([
 		{
 			name: 'Henry Phillip',
@@ -170,6 +162,11 @@ export const Messenger = () => {
 			status: 'Delivered',
 		},
 	])
+	const [tab, setTab] = useState(1)
+
+	const toggleTab = (id) => {
+		return setTab(id)
+	}
 
 	return (
 		<>
