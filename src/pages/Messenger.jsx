@@ -23,6 +23,7 @@ import ThemeContext from '../context/ThemeContext'
 export const Messenger = () => {
 	const { theme } = useContext(ThemeContext)
 	const [bg, setBg] = useState(false)
+	const [chatSelected, setChatSelected] = useState(1)
 
 	const [tab, setTab] = useState(1)
 
@@ -122,7 +123,7 @@ export const Messenger = () => {
 		const msg = messages.at(message)
 		console.log(msg)
 		console.log(msgs)
-    console.log(messages.message);
+		console.log(messages.message)
 		// setBg((prevState) => !prevState)
 	}
 
@@ -184,20 +185,22 @@ export const Messenger = () => {
 		<>
 			<div className='flex gap- h-[87.6vh] text-black md:hidden sm:hidden'>
 				{/* Contacts for large screen */}
-				<div className='flex flex-col px-4 py-2 w-[42%] bg-violet-200 rounded-tl-xl rounded-b-xl sm:text-sm'>
-					<div className='flex items-center justify-between rounded'>
-						<input
-							type='text'
-							name='search'
-							placeholder='Search'
-							className='w-full my-2 input h-9'
-						/>
-					</div>
-					<div>
-						<h1 className='flex items-center justify-between mt-3 font-black'>
-							Team Messages (1)
-							<FaAngleDown />
-						</h1>
+				<div className='flex flex-col w-[42%] bg-violet-200 rounded-tl-xl rounded-b-xl sm:text-sm'>
+					<div className='px-3 py-2'>
+						<div className='flex items-center justify-between rounded'>
+							<input
+								type='text'
+								name='search'
+								placeholder='Search'
+								className='w-full my-2 input h-9'
+							/>
+						</div>
+						<div>
+							<h1 className='flex items-center justify-between mt-3 font-black'>
+								Team Messages (1)
+								<FaAngleDown />
+							</h1>
+						</div>
 					</div>
 					{/* <div className='h-auto overflow-y-auto'> */}
 					<div
@@ -210,9 +213,9 @@ export const Messenger = () => {
 								key={message.id}
 								// className='flex justify-between my-2 bg-white'
 								className={`${
-									bg === true ? '' : ''
-								} flex justify-between my-2 `}
-								onClick={changeBg}
+									chatSelected === message.id ? 'bg-white' : ''
+								} flex justify-between py-2 px-3`}
+								onClick={() => setChatSelected(message.id)}
 							>
 								<div className='flex gap-2 cursor-pointer sm:text-sm'>
 									<div className='flex self-start'>{message.image}</div>
@@ -295,7 +298,7 @@ export const Messenger = () => {
 											className='w-8'
 											alt=''
 										/>
-                    <input
+										<input
 											type='text'
 											name='text'
 											id='text'
@@ -306,7 +309,7 @@ export const Messenger = () => {
 									<div className='flex items-center gap-2'>
 										<LuImage />
 										<FaMicrophone />
-                    <button>Send</button>
+										<button>Send</button>
 									</div>
 								</div>
 							</div>
@@ -361,13 +364,13 @@ export const Messenger = () => {
 						tab === 1 ? 'block' : 'hidden'
 					} h-auto overflow-y-auto `}
 				>
-					{messages.map((message) => (
+					{messages.map((message, id) => (
 						<div
 							key={message.id}
 							className={`${
 								theme === 'dark' && 'text-white'
 							} flex justify-between my-2`}
-							onClick={changeBg}
+							onClick={() => setChatSelected(id)}
 						>
 							<div className='flex gap-2 cursor-pointer sm:text-sm'>
 								<div className='flex self-start'>{message.image}</div>
