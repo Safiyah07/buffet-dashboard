@@ -9,7 +9,8 @@ import Avatar9 from '../assets/Avatar8.png'
 export const Notifications = () => {
 	const notificationItems = [
 		{
-			message: 'Henry Phillip just created an account as a driver, Welcome Henry!',
+			message:
+				'Henry Phillip just created an account as a driver, Welcome Henry!',
 			image: (
 				<img
 					src={Avatar1}
@@ -31,7 +32,8 @@ export const Notifications = () => {
 			date: '11th June',
 		},
 		{
-			message: "Pasta has been added to the menu for this week, You're welcome!",
+			message:
+				"Pasta has been added to the menu for this week, You're welcome!",
 			image: (
 				<img
 					src={Avatar3}
@@ -53,7 +55,8 @@ export const Notifications = () => {
 			date: 'Last Month',
 		},
 		{
-			message: 'Henry Phillip just created an account as a driver, Welcome Henry!',
+			message:
+				'Henry Phillip just created an account as a driver, Welcome Henry!',
 			image: (
 				<img
 					src={Avatar3}
@@ -75,7 +78,8 @@ export const Notifications = () => {
 			date: 'Last Month',
 		},
 		{
-			message: 'Henry Phillip just created an accountas a driver, Welcome Henry!',
+			message:
+				'Henry Phillip just created an accountas a driver, Welcome Henry!',
 			image: (
 				<img
 					src={Avatar4}
@@ -86,7 +90,8 @@ export const Notifications = () => {
 			date: '20th May',
 		},
 		{
-			message: 'Henry Phillip just created an account as a driver, Welcome Henry!',
+			message:
+				'Henry Phillip just created an account as a driver, Welcome Henry!',
 			image: (
 				<img
 					src={Avatar5}
@@ -97,7 +102,8 @@ export const Notifications = () => {
 			date: '20th May',
 		},
 		{
-			message: 'Kristi May just created an account for takeaway, Welcome to the team!',
+			message:
+				'Kristi May just created an account for takeaway, Welcome to the team!',
 			image: (
 				<img
 					src={Avatar6}
@@ -108,7 +114,8 @@ export const Notifications = () => {
 			date: '20th May',
 		},
 		{
-			message: "Our specials are back, You requested, we granted. You're welcome!",
+			message:
+				"Our specials are back, You requested, we granted. You're welcome!",
 			image: (
 				<img
 					src={Avatar1}
@@ -142,13 +149,19 @@ export const Notifications = () => {
 							className='flex items-center justify-between mb-2'
 						>
 							<div className='flex gap-2 cursor-pointer sm:text-sm'>
-								<div className='flex self-start w-12 sm:w-[70px]'>{notification.image}</div>
+								<div className='flex self-start w-12 sm:w-[70px]'>
+									{notification.image}
+								</div>
 								<div className='flex flex-col'>
 									<span className='sm:text-xs'>{notification.message}</span>
-									<span className='text-xs text-gray-400'>{notification.time}</span>
+									<span className='text-xs text-gray-400'>
+										{notification.time}
+									</span>
 								</div>
 							</div>
-							<div className='flex self-start justify-end w-[95px] text-sm sm:text-xs'>{notification.date}</div>
+							<div className='flex self-start justify-end w-[95px] text-sm sm:text-xs'>
+								{notification.date}
+							</div>
 						</div>
 					))}
 				</div>

@@ -17,7 +17,6 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-	/* box-shadow: inset 1px 1px 2px grey; */
 	border-radius: 20px;
 }
 
@@ -29,7 +28,6 @@ body {
 
 .table :where(th, td) {
 	white-space: nowrap;
-	/* padding: 2vw 2vw16px; */
 	vertical-align: middle;
 	width: 100vw;
 }

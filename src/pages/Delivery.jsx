@@ -9,12 +9,13 @@ import Avatar3 from '../assets/Avatar3.png'
 
 // // custom cluster icon
 const createClusterCustomIcon = function (cluster) {
-  return new divIcon({
-    html: `<span className='text-white'>${cluster.getChildCount()}</span>`,
-    className: "h-12 w-12 rounded-[50%] bg-light-purple translate-y-[50%] translate-x-[50%] flex justify-center items-center font-black text-white text-2xl",
-    iconSize: point(33, 33, true)
-  });
-};
+	return new divIcon({
+		html: `<span className='text-white'>${cluster.getChildCount()}</span>`,
+		className:
+			'h-12 w-12 rounded-[50%] bg-light-purple translate-y-[50%] translate-x-[50%] flex justify-center items-center font-black text-white text-2xl',
+		iconSize: point(33, 33, true),
+	})
+}
 
 // markers
 const markers = [
@@ -48,7 +49,7 @@ export const Delivery = () => {
 	return (
 		<>
 			<div className='flex flex-col gap-5'>
-				<section className='flex md:flex-col sm:flex-col items-center gap-4'>
+				<section className='flex items-center gap-4 md:flex-col sm:flex-col'>
 					<div className='border-2 border-violet-shade rounded-xl p-2 w-[38%] md:w-full sm:w-full'>
 						<div className='flex items-center justify-between px-2 pb-4'>
 							<img
@@ -176,7 +177,10 @@ export const Delivery = () => {
 							attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 							url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 						/>
-						<MarkerClusterGroup chunkedLoading iconCreateFunction={createClusterCustomIcon}>
+						<MarkerClusterGroup
+							chunkedLoading
+							iconCreateFunction={createClusterCustomIcon}
+						>
 							{markers.map((marker) => (
 								<Marker
 									position={marker.geocode}

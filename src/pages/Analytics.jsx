@@ -12,9 +12,7 @@ export const Analytics = () => {
 	return (
 		<>
 			<div className='w-full'>
-				<div
-					className='grid w-full grid-cols-4 lg:my-4 max_md:mb-5 lg:gap-x-12 lg:gap-y-6 max_md:gap-y-4 max_md:gap-x-8 max_md:grid-cols-2'
-				>
+				<div className='grid w-full grid-cols-4 lg:my-4 max_md:mb-5 lg:gap-x-12 lg:gap-y-6 max_md:gap-y-4 max_md:gap-x-8 max_md:grid-cols-2'>
 					<button
 						onClick={() => toggleTab(1)}
 						className={`${
@@ -105,7 +103,7 @@ export const Analytics = () => {
 						<div className='lg:w-[33vw] h-auto md:w-[70%] sm:w-full max_md:mb-6'>
 							<LineChart />
 						</div>
-						
+
 						<div className='lg:h-[27vw] lg:w-40vw sm:w-3/4 max_md:mb-6'>
 							<DoughnutChart />
 						</div>

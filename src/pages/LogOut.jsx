@@ -16,7 +16,7 @@ export const LogOut = () => {
 					<br />
 					{/* Open the modal using ID.showModal() method */}
 					<button
-						className='flex items-center mb-1 py-2 px-4 rounded-lg border-2 border-light-purple'
+						className='flex items-center px-4 py-2 mb-1 border-2 rounded-lg border-light-purple'
 						onClick={() => window.my_modal_1.showModal()}
 					>
 						Naah, just kidding
@@ -29,18 +29,18 @@ export const LogOut = () => {
 							method='dialog'
 							className='modal-box'
 						>
-							<h3 className='font-bold text-lg'>Hello!</h3>
+							<h3 className='text-lg font-bold'>Hello!</h3>
 							<p className='py-4'>Explore more options from the sidebar/menu</p>
 							<div className='modal-action'>
 								{/* if there is a button in form, it will close the modal */}
-								<button className='flex items-center mb-1 py-2 px-4 rounded-lg border-2 border-light-purple'>
+								<button className='flex items-center px-4 py-2 mb-1 border-2 rounded-lg border-light-purple'>
 									Close
 								</button>
 							</div>
 						</form>
 					</dialog>
 					<Link to='/'>
-						<button className='flex items-center mb-1 py-2 px-6 rounded-lg bg-light-purple text-white'>
+						<button className='flex items-center px-6 py-2 mb-1 text-white rounded-lg bg-light-purple'>
 							Yes, Log me out
 						</button>
 					</Link>
