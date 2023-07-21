@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import FoodPic2 from '../assets/FoodPic2.jpg'
 import FoodPic3 from '../assets/FoodPic3.jpg'
 import FoodPic5 from '../assets/FoodPic5.jpg'
@@ -15,126 +16,136 @@ export const Menu = () => {
 							Top Sellings of the Day
 						</h2>
 						<div className='grid gap-4 lg:grid-cols-4 lg_screen2:grid-cols-3 max_md:grid-cols-2'>
-							<div>
-								<FoodImage>
-									<img
-										src={FoodPic2}
-										alt=''
-									/>
-								</FoodImage>
-								<div className='flex items-center justify-between lg_screen:text-sm'>
-									<p>Pasta</p>
-									<p>$11.40</p>
+							<Suspense fallback= 'loading...'>
+								<div>
+									<FoodImage>
+										<img
+											src={FoodPic2}
+											loading='lazy'
+											alt=''
+										/>
+									</FoodImage>
+									<div className='flex items-center justify-between lg_screen:text-sm'>
+										<p>Pasta</p>
+										<p>$11.40</p>
+									</div>
+									<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
+										Ordered 54
+									</p>
 								</div>
-								<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
-									Ordered 54
-								</p>
-							</div>
-							<div>
-								<FoodImage>
-									<img
-										src={FoodPic2}
-										alt=''
-									/>
-								</FoodImage>
-								<div className='flex items-center justify-between lg_screen:text-sm'>
-									<p>Pasta</p>
-									<p>$11.40</p>
+								<div>
+									<FoodImage>
+										<img
+											src={FoodPic2}
+											loading='lazy'
+											alt=''
+										/>
+									</FoodImage>
+									<div className='flex items-center justify-between lg_screen:text-sm'>
+										<p>Pasta</p>
+										<p>$11.40</p>
+									</div>
+									<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
+										Ordered 54
+									</p>
 								</div>
-								<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
-									Ordered 54
-								</p>
-							</div>
-							<div>
-								<FoodImage>
-									<img
-										src={FoodPic2}
-										alt=''
-									/>
-								</FoodImage>
-								<div className='flex items-center justify-between lg_screen:text-sm'>
-									<p>Pasta</p>
-									<p>$11.40</p>
+								<div>
+									<FoodImage>
+										<img
+											src={FoodPic2}
+											loading='lazy'
+											alt=''
+										/>
+									</FoodImage>
+									<div className='flex items-center justify-between lg_screen:text-sm'>
+										<p>Pasta</p>
+										<p>$11.40</p>
+									</div>
+									<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
+										Ordered 54
+									</p>
 								</div>
-								<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
-									Ordered 54
-								</p>
-							</div>
-							<div>
-								<FoodImage>
-									<img
-										src={FoodPic2}
-										alt=''
-									/>
-								</FoodImage>
-								<div className='flex items-center justify-between lg_screen:text-sm'>
-									<p>Pasta</p>
-									<p>$11.40</p>
+								<div>
+									<FoodImage>
+										<img
+											src={FoodPic2}
+											loading='lazy'
+											alt=''
+										/>
+									</FoodImage>
+									<div className='flex items-center justify-between lg_screen:text-sm'>
+										<p>Pasta</p>
+										<p>$11.40</p>
+									</div>
+									<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
+										Ordered 54
+									</p>
 								</div>
-								<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
-									Ordered 54
-								</p>
-							</div>
-							<div>
-								<FoodImage>
-									<img
-										src={FoodPic2}
-										alt=''
-									/>
-								</FoodImage>
-								<div className='flex items-center justify-between lg_screen:text-sm'>
-									<p>Pasta</p>
-									<p>$11.40</p>
+								<div>
+									<FoodImage>
+										<img
+											src={FoodPic2}
+											loading='lazy'
+											alt=''
+										/>
+									</FoodImage>
+									<div className='flex items-center justify-between lg_screen:text-sm'>
+										<p>Pasta</p>
+										<p>$11.40</p>
+									</div>
+									<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
+										Ordered 54
+									</p>
 								</div>
-								<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
-									Ordered 54
-								</p>
-							</div>
-							<div>
-								<FoodImage>
-									<img
-										src={FoodPic2}
-										alt=''
-									/>
-								</FoodImage>
-								<div className='flex items-center justify-between lg_screen:text-sm'>
-									<p>Pasta</p>
-									<p>$11.40</p>
+								<div>
+									<FoodImage>
+										<img
+											src={FoodPic2}
+											loading='lazy'
+											alt=''
+										/>
+									</FoodImage>
+									<div className='flex items-center justify-between lg_screen:text-sm'>
+										<p>Pasta</p>
+										<p>$11.40</p>
+									</div>
+									<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
+										Ordered 54
+									</p>
 								</div>
-								<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
-									Ordered 54
-								</p>
-							</div>
-							<div>
-								<FoodImage>
-									<img
-										src={FoodPic2}
-										alt=''
-									/>
-								</FoodImage>
-								<div className='flex items-center justify-between lg_screen:text-sm'>
-									<p>Pasta</p>
-									<p>$11.40</p>
+								<div>
+									<FoodImage>
+										<img
+											src={FoodPic2}
+											loading='lazy'
+											alt=''
+										/>
+									</FoodImage>
+									<div className='flex items-center justify-between lg_screen:text-sm'>
+										<p>Pasta</p>
+										<p>$11.40</p>
+									</div>
+									<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
+										Ordered 54
+									</p>
 								</div>
-								<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
-									Ordered 54
-								</p>
-							</div>
-							<div>
-								<FoodImage>
-									<img
-										src={FoodPic2}
-										alt=''
-									/>
-								</FoodImage>
-								<div className='flex items-center justify-between lg_screen:text-sm'>
-									<p>Pasta</p>
-									<p>$11.40</p>
+								<div>
+									<FoodImage>
+										<img
+											src={FoodPic2}
+											loading='lazy'
+											alt=''
+										/>
+									</FoodImage>
+									<div className='flex items-center justify-between lg_screen:text-sm'>
+										<p>Pasta</p>
+										<p>$11.40</p>
+									</div>
+									<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
+										Ordered 54
+									</p>
 								</div>
-								<p className='border border-orange rounded text-xs w-[4.8rem] px-1 lg_screen:text-[11px] lg_screen:w-[4.5rem]'>
-									Ordered 54
-								</p>
-							</div>
+							</Suspense>
 						</div>
 
 						<div className='mt-8 max_md:mx-auto'>
