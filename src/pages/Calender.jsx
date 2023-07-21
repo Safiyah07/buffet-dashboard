@@ -46,9 +46,9 @@ export const Calender = () => {
 
 	return (
 		<div className='pt-16'>
-			<div className='max-w-lg mx-auto sm:px-7 md:max-w-4xl md:px-6'>
+			<div className='max-w-2xl mx-auto sm:px-7 md:max-w-4xl md:px-6'>
 				<h2 className='font-bold text-gray-900'>
-					Schedule for{' '}
+					Today is{' '}
 					<time dateTime={format(selectedDay, 'yyyy-MM-dd')}>
 						{format(selectedDay, 'MMM dd, yyy')}
 					</time>
@@ -107,7 +107,7 @@ export const Calender = () => {
 											isEqual(day, selectedDay) && 'text-white',
 											!isEqual(day, selectedDay) &&
 												isToday(day) &&
-												'text-light-purple',
+												'text-orange',
 											!isEqual(day, selectedDay) &&
 												!isToday(day) &&
 												isSameMonth(day, firstDayCurrentMonth) &&
@@ -118,12 +118,12 @@ export const Calender = () => {
 												'text-gray-400',
 											isEqual(day, selectedDay) &&
 												isToday(day) &&
-												'bg-light-purple',
+												'bg-orange',
 											isEqual(day, selectedDay) &&
 												!isToday(day) &&
-												'bg-light-purple',
+												'bg-orange',
 											!isEqual(day, selectedDay) &&
-												'hover:bg-light-purple hover:text-white',
+												'hover:bg-orange hover:text-white',
 											(isEqual(day, selectedDay) || isToday(day)) &&
 												'font-semibold',
 											'mx-auto flex h-8 w-8 items-center justify-center rounded-full'
