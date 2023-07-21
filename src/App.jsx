@@ -14,15 +14,13 @@ import { Orders } from './pages/Orders'
 import { Staff } from './pages/Staff'
 import { Delivery } from './pages/Delivery'
 import { Analytics } from './pages/Analytics'
-import {Calender} from './pages/Calender'
-import {Calender2} from './pages/Calender2'
-import { Calender3 } from './pages/Calender3'
+import { Messenger } from './pages/Messenger'
+import { Calender } from './pages/Calender'
 import { Settings } from './pages/Settings'
 import { LogOut } from './pages/LogOut'
-import { Messenger } from './pages/Messenger'
+import { Notifications } from './pages/Notifications'
 import { NotFound } from './pages/NotFound'
 import { ThemeProvider } from './context/ThemeContext'
-import { Notifications } from './pages/Notifications'
 
 function App() {
 	const router = createBrowserRouter(

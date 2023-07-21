@@ -18,49 +18,49 @@ export const DashboardSidebar = () => {
 			id: 1,
 			title: 'dashboard',
 			icon: <TbLayout2 />,
-			link: ''
+			link: '',
 		},
 		{
 			id: 2,
 			title: 'menu',
 			icon: <VscLayoutMenubar />,
-			link: 'menu'
+			link: 'menu',
 		},
 		{
 			id: 3,
 			title: 'orders',
 			icon: <TbPhoneCheck />,
-			link: 'orders'
+			link: 'orders',
 		},
 		{
 			id: 4,
 			title: 'staff',
 			icon: <IoIosPeople />,
-			link: 'staff'
+			link: 'staff',
 		},
 		{
 			id: 5,
 			title: 'delivery',
 			icon: <TbTruckDelivery />,
-			link: 'delivery'
+			link: 'delivery',
 		},
 		{
 			id: 6,
 			title: 'analytics',
 			icon: <BsBarChartLine />,
-			link: 'analytics'
+			link: 'analytics',
 		},
 		{
 			id: 7,
 			title: 'messenger',
 			icon: <TbMessageCircle2 />,
-			link: 'messenger'
+			link: 'messenger',
 		},
 		{
 			id: 8,
 			title: 'calender',
 			icon: <BsCalendar2Date />,
-			link: 'calender'
+			link: 'calender',
 		},
 	]
 
@@ -134,7 +134,7 @@ export const DashboardSidebar = () => {
 
 					<div>
 						<ul className='p-4 rounded-box'>
-						{navbarItemsBottom.map((Item) => (
+							{navbarItemsBottom.map((Item) => (
 								<li
 									key={Item.id}
 									className='capitalize'

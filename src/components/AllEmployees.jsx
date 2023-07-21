@@ -9,10 +9,9 @@ import Avatar6 from '../assets/Avatar6.png'
 import Avatar7 from '../assets/Avatar7.png'
 import Avatar8 from '../assets/Avatar8.png'
 
-function AllEmployees({ tab }) {
+function AllEmployees() {
 	return (
 		<>
-			{/* <div className={`${tab === 1 ? 'block' : 'hidden'}`}> */}
 			<div>
 				<div className='flex justify-between w-full'>
 					<table className='table'>

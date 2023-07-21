@@ -71,7 +71,6 @@ const data = {
 		{
 			label: 'Income',
 			data: labels.map(() => faker.number.int({ min: 0, max: 14000 })),
-			// data: UserData.map((data) => data.userLost),
 			backgroundColor: '#f6b768',
 			borderRadius: 30,
 			borderSkipped: false,
@@ -79,7 +78,6 @@ const data = {
 		{
 			label: 'Expenses',
 			data: labels.map(() => faker.number.int({ min: 0, max: 10000 })),
-			// data: UserData.map((data) => data.userGain),
 			backgroundColor: '#6b58aa',
 			borderRadius: 30,
 			borderSkipped: false,

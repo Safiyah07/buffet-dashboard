@@ -3,7 +3,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 
 ChartJS.register(ArcElement, Tooltip, Legend)
 
-export const options = {
+const options = {
 	responsive: true,
 	plugins: {
 		legend: {
@@ -29,7 +29,7 @@ export const options = {
 	},
 }
 
-export const data = {
+const data = {
 	labels: ['Drink', 'Food', 'Other'],
 	datasets: [
 		{
@@ -43,29 +43,11 @@ export const data = {
 	],
 }
 
-const centerText = {
-	id: 'centerText',
-	beforeDataSetsDraw(chart, args, pluginOptions) {
-		const { ctx, data } = chart
-
-		ctx.save()
-		const xCoor = chart.getDatasetMeta(0).data[0].x
-		const yCoor = chart.getDatasetMeta(0).data[0].y
-		ctx.font = 'bold 30px sans-serif'
-		ctx.fillStyle = 'rgba(54, 162, 235, 1'
-		ctx.textAlign = 'center'
-		ctx.textBaseline = 'middle'
-		ctx.fillText(`Value: ${data.datasets[0].data[0]}`, xCoor, yCoor)
-		// ctx.fillText('text', xCoor, yCoor)
-	},
-}
-
 function DoughnutChart() {
 	return (
 		<Doughnut
 			data={data}
 			options={options}
-			plugins={[centerText]}
 		/>
 	)
 }

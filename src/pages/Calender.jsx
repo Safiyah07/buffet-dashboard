@@ -8,11 +8,9 @@ import {
 	getDay,
 	isEqual,
 	getYear,
-	// isSameDay,
 	isSameMonth,
 	isToday,
 	parse,
-	// parseISO,
 	startOfToday,
 } from 'date-fns'
 
@@ -139,20 +137,6 @@ export const Calender = () => {
 									))}
 								</div>
 							</div>
-							{/* <section className='mt-12 md:mt-0 md:pl-14'>	
-						<ol className='mt-4 space-y-1 text-sm leading-6 text-gray-500'>
-							{selectedDayMeetings.length > 0 ? (
-								selectedDayMeetings.map((meeting) => (
-									<Meeting
-										meeting={meeting}
-										key={meeting.id}
-									/>
-								))
-							) : (
-								<p>No meetings for today.</p>
-							)}
-						</ol>
-					</section> */}
 						</div>
 					</div>
 				</div>

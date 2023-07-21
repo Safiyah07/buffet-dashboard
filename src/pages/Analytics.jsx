@@ -97,7 +97,6 @@ export const Analytics = () => {
 				</div>
 
 				{/* Tabs data */}
-				{/* <AllEmployees tab={tab} /> */}
 				<div className='flex w-full'>
 					<div className='w-full max_md:w-[96vw] flex lg:justify-around max_md:items-center max_md:flex-col border-2 border-violet-shade shadow-[1px_1px_3px_0px_grey] rounded-xl pt-7 px-7'>
 						<div className='lg:w-[33vw] h-auto md:w-[70%] sm:w-full max_md:mb-6'>

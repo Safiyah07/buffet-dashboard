@@ -5,7 +5,7 @@ const ThemeContext = createContext()
 
 // eslint-disable-next-line react/prop-types
 export const ThemeProvider = ({ children }) => {
-  // use theme from local storage if available or set light theme
+	// use theme from local storage if available or set light theme
 	const [theme, setTheme] = useState(
 		localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
 	)
@@ -30,8 +30,8 @@ export const ThemeProvider = ({ children }) => {
 	return (
 		<ThemeContext.Provider
 			value={{
-        theme,
-        handleToggle,
+				theme,
+				handleToggle,
 				setTheme,
 			}}
 		>
@@ -41,7 +41,7 @@ export const ThemeProvider = ({ children }) => {
 }
 
 ThemeContext.propTypes = {
-	children: PropTypes.any
+	children: PropTypes.any,
 }
 
 export default ThemeContext

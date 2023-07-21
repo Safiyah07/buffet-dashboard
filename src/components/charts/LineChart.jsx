@@ -20,7 +20,7 @@ ChartJS.register(
 	Legend
 )
 
-export const options = {
+const options = {
 	responsive: true,
 	scales: {
 		x: {
@@ -54,7 +54,7 @@ const customerTime = [
 	{ time: '8.00pm', busyTime: { food: 180 } },
 ]
 
-export const data = {
+const data = {
 	datasets: [
 		{
 			data: customerTime,

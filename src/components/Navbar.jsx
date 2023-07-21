@@ -29,67 +29,67 @@ export const Navbar = () => {
 			id: 1,
 			title: 'dashboard',
 			icon: <TbLayout2 />,
-			link: ''
+			link: '',
 		},
 		{
 			id: 2,
 			title: 'menu',
 			icon: <VscLayoutMenubar />,
-			link: 'menu'
+			link: 'menu',
 		},
 		{
 			id: 3,
 			title: 'orders',
 			icon: <TbPhoneCheck />,
-			link: 'orders'
+			link: 'orders',
 		},
 		{
 			id: 4,
 			title: 'staff',
 			icon: <IoIosPeople />,
-			link: 'staff'
+			link: 'staff',
 		},
 		{
 			id: 5,
 			title: 'delivery',
 			icon: <TbTruckDelivery />,
-			link: 'delivery'
+			link: 'delivery',
 		},
 		{
 			id: 6,
 			title: 'analytics',
 			icon: <BsBarChartLine />,
-			link: 'analytics'
+			link: 'analytics',
 		},
 		{
 			id: 7,
 			title: 'messenger',
 			icon: <TbMessageCircle2 />,
-			link: 'messenger'
+			link: 'messenger',
 		},
 		{
 			id: 8,
 			title: 'calender',
 			icon: <BsCalendar2Date />,
-			link: 'calender'
+			link: 'calender',
 		},
 		{
 			id: 9,
 			title: 'notifications',
 			icon: <IoNotificationsOutline />,
-			link: 'notifications'
+			link: 'notifications',
 		},
 		{
 			id: 10,
 			title: 'settings',
 			icon: <TbSettings />,
-			link: 'settings'
+			link: 'settings',
 		},
 		{
 			id: 11,
 			title: 'log-out',
 			icon: <IoPersonCircleSharp />,
-			link: 'log-out'
+			link: 'log-out',
 		},
 	]
 
@@ -147,10 +147,10 @@ export const Navbar = () => {
 				</div>
 				<div className='flex items-center max_md:hidden'>
 					<AvatarImage>
-							<img
-								src={Profile}
-								alt=''
-							/>
+						<img
+							src={Profile}
+							alt=''
+						/>
 					</AvatarImage>
 					<div className='flex-1 text-lg'>
 						{''}
@@ -217,10 +217,10 @@ export const Navbar = () => {
 						</div>
 
 						<div className='w-10 h-10 overflow-hidden border-2 lg:hidden sm:h-8 sm:w-8 lg:mr-3 rounded-xl border-violet-200'>
-								<img
-									src={Profile}
-									alt='Profile_Image'
-								/>
+							<img
+								src={Profile}
+								alt='Profile_Image'
+							/>
 						</div>
 					</div>
 				</div>
