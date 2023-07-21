@@ -19,7 +19,7 @@ function classNames(...classes) {
 	return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export const Calender = () => {
 	let today = startOfToday()
 	const [selectedDay, setSelectedDay] = useState(today)
 	const [currentMonth, setCurrentMonth] = useState(format(today, 'MMM-yyyy'))
@@ -45,7 +45,7 @@ export default function Example() {
 	// )
 
 	return (
-		<div className='pt-16'>
+		<div className='pt-16 lg:hidden'>
 			<div className='max-w-md px-4 mx-auto sm:px-7 md:max-w-4xl md:px-6'>
 				<h2 className='font-bold text-gray-900'>
 					Schedule for{' '}

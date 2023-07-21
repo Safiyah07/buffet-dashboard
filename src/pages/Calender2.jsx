@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Calender } from './Calender'
 import {
 	// add,
 	eachDayOfInterval,
@@ -19,7 +20,7 @@ function classNames(...classes) {
 	return classes.filter(Boolean).join(' ')
 }
 
-export default function Calender2() {
+export const Calender2 = () => {
 	const today = startOfToday()
 	const [selectedDay, setSelectedDay] = useState(today)
 	const [currentMonth, setCurrentMonth] = useState(format(today, 'MMM-yyyy'))
@@ -31,14 +32,14 @@ export default function Calender2() {
 		end: endOfMonth(firstDayCurrentMonth),
 	})
 
-	// console.log(currentMonth)
-	// console.log(firstDayCurrentMonth)
+	console.log(currentMonth)
+	console.log(firstDayCurrentMonth)
 	// console.log(days);
 
 	// YEAR
 	const year = new Date().getFullYear()
 
-	const getMonths = getDaysInMonth(new Date(year, 5))
+	const getMonths = getDaysInMonth(new Date(year, 6))
 	console.log(getMonths)
 
 	// MONTHS
@@ -76,7 +77,8 @@ export default function Calender2() {
 
 	return (
 		<>
-			<div className='border border-light-purple shadow-[1px_1px_3px_0px_grey] rounded-md p-4'>
+		<Calender />
+			<div className='border border-light-purple shadow-[1px_1px_3px_0px_grey] rounded-md md:hidden'>
 				<div className='flex mb-4'>
 					<p className='font-bold'>{dateTime}</p>
 				</div>

@@ -14,8 +14,8 @@ import { Orders } from './pages/Orders'
 import { Staff } from './pages/Staff'
 import { Delivery } from './pages/Delivery'
 import { Analytics } from './pages/Analytics'
-// import {Calender} from './pages/Calender'
-// import {Calender2} from './pages/Calender2'
+import {Calender} from './pages/Calender'
+import {Calender2} from './pages/Calender2'
 import { Calender3 } from './pages/Calender3'
 import { Settings } from './pages/Settings'
 import { LogOut } from './pages/LogOut'
@@ -57,7 +57,7 @@ function App() {
 				/>
 				<Route
 					path='/calender'
-					element={<Calender3 />}
+					element={<Calender2 />}
 				/>
 				<Route
 					path='/settings'
