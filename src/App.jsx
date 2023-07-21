@@ -57,7 +57,7 @@ function App() {
 				/>
 				<Route
 					path='/calender'
-					element={<Calender2 />}
+					element={<Calender />}
 				/>
 				<Route
 					path='/settings'

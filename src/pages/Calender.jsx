@@ -45,8 +45,8 @@ export const Calender = () => {
 	// )
 
 	return (
-		<div className='pt-16 lg:hidden'>
-			<div className='max-w-md px-4 mx-auto sm:px-7 md:max-w-4xl md:px-6'>
+		<div className='pt-16'>
+			<div className='max-w-lg mx-auto sm:px-7 md:max-w-4xl md:px-6'>
 				<h2 className='font-bold text-gray-900'>
 					Schedule for{' '}
 					<time dateTime={format(selectedDay, 'yyyy-MM-dd')}>
@@ -83,13 +83,13 @@ export const Calender = () => {
 							</button>
 						</div>
 						<div className='grid grid-cols-7 mt-10 text-xs leading-6 text-center text-[dimgrey] font-bold'>
-							<div>S</div>
-							<div>M</div>
-							<div>T</div>
-							<div>W</div>
-							<div>T</div>
-							<div>F</div>
-							<div>S</div>
+							<div>Sun</div>
+							<div>Mon</div>
+							<div>Tue</div>
+							<div>Wed</div>
+							<div>Thu</div>
+							<div>Fri</div>
+							<div>Sat</div>
 						</div>
 						<div className='grid grid-cols-7 mt-2 text-sm'>
 							{days.map((day, dayIdx) => (
